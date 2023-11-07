@@ -1,9 +1,11 @@
-
+import Subscription from './Component/subscribtion/Subscription';
+import Footer from './Component/Footer/Footer';
 export default function Home() {
 
   return (
-    <main className = "bg-blue-500">
-      hello world
-    </main>
+    <div>
+      <Subscription />
+      <Footer />
+</div>
   )
 }
