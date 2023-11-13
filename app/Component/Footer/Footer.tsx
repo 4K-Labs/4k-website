@@ -66,13 +66,13 @@ export default function Home() {
     },
   ];
   return (
-    <div className="bg-footer text-white-300  flex w-full h-[418px] p-24 justify-around">
+    <div className="bg-footer text-white-300 flex  w-full  flex-wrap p-24 justify-around gap-20">
       <div className="flex flex-col text-white ">
         <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
         <p>Some thing about 4K labs can be written here</p>
       </div>
 
-      <div className="flex flex-col text-white">
+      <div className="flex flex-col text-white justify-start">
         <h1 className="text-xl font-semibold mb-4">Quick Links</h1>
         <div className="flex flex-col">
           {QuickLinks.map((link) => (

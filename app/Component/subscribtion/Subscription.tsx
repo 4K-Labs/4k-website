@@ -17,17 +17,17 @@ export default function Home() {
             Stay up to date with our latest news and products
           </h1>
         </div>
-        <div className="flex">
+        <div className="flex-col">
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="rounded rounded-full w-[400px] p-3"
+            className="rounded my-2 rounded-full w-[400px] p-3"
             type="email"
             placeholder="Enter your email address"
           />
           <button
             onClick={handleSubsribe}
-            className="bg-yellow-500 ml-4 p-3 px-10 rounded rounded-full transform hover:scale-110"
+            className="bg-yellow-500 my-2 ml-4 p-3 px-10 rounded rounded-full transform hover:scale-110"
           >
             Subscribe
           </button>

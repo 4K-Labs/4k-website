@@ -15,7 +15,7 @@ export default function Mission() {
               alt={"4klabs"}
               src={"/images/4klabs.png"}
               width={300}
-              height={300}
+              height={400}
               className=" m-auto"
             />
           </div>
