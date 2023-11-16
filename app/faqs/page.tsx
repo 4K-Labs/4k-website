@@ -1,7 +1,8 @@
+import Faqs from "@/components/Faqs"
 const FAQs = ()=>{
-    return <div>
-        Hellooo
-    </div>
+    return (
+        <Faqs/>
+    )
 }
 
 export default FAQs
