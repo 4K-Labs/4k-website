@@ -1,9 +1,9 @@
-
+import AboutUs from '@/components/AboutUs'
 export default function Home() {
 
   return (
-    <main className = "bg-blue-500">
-      hello world
-    </main>
+    <div className="bg-gray-100">
+      <AboutUs/>
+    </div>
   )
 }
