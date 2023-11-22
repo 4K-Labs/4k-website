@@ -1,9 +1,9 @@
-
+import { HorizontalCard } from "./components/ProjectCard";
 export default function Home() {
-
   return (
-    <main className = "bg-blue-500">
+    <main className="">
       hello world
+     
     </main>
-  )
+  );
 }
