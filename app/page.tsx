@@ -1,9 +1,15 @@
-import Hero from "./components/hero"
+
+import AboutUs from '@/app/components/AboutUs'
+import Testimony from '@/app/components/Testimony'
+import Hero from "@/app/components/hero"
+
 export default function Home() {
 
   return (
-    <main className = "bg-primary font-custom tracking-wide">
+    <div className="bg-primary font-custom tracking-wide>
       <Hero/>
-    </main>
+      <AboutUs/>
+      <Testimony/>
+    </div>
   )
 }
