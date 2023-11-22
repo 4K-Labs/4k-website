@@ -1,5 +1,5 @@
-import AboutUs from '@/components/AboutUs'
-import Testimony from '@/components/Testimony'
+import AboutUs from '@/app/components/AboutUs'
+import Testimony from '@/app/components/Testimony'
 
 export default function Home() {
 

@@ -83,17 +83,18 @@ const Testimony = ()=>{
         };  
       
     return (
-    <div className='w-4/5 m-auto'>
+    <div className='w-4/5 m-auto my-8'>
         <div className='m-4'>
+          <div className="flex justify-center p-4"><h1 className="text-4xl font-bold">Testimonial</h1></div>
           <Slider {...settings}>
             {testimonials.map((testimony)=>(
                 <div key={testimony.id} className=''>
-                    <Card color="transparent" shadow={false} className="w-64">
+                    <Card color="transparent" shadow={false} className="w-64 p-2 bg-white">
                         <CardHeader
                         color="transparent"
                         floated={false}
                         shadow={false}
-                        className="mx-0 flex items-center gap-4 pt-0 pb-8"
+                        className="mx-0 flex items-center gap-4 pt-0 pb-4"
                         >
                           <Avatar
                               size="lg"
