@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function WhoAreWe() {
     return (
-      <div className="flex px-12 p-3 m-7">
-        <div className="flex-1 bg-gray-300 p-12 z-10 rounded-e-3xl">
-          <h1 className="text-4xl mb-4 text-yellow-400 font-semibold text-center">
+      <div className="flex flex-col-reverse md:flex-row md:px-12 p-3 m-7">
+        <div className="flex-1 bg-gray-100 p-6 md:p-12 z-10 rounded-e-3xl">
+          <h1 className="text-lg md:text-4xl mb-4 text-yellow-400 font-semibold text-center">
             Who Are We
           </h1>
           <div>

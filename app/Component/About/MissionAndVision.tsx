@@ -9,7 +9,7 @@ export default function Mission() {
 
     return (
       <div className="p-7">
-        <div className="flex px-12 p-3 -mb-20 items-center">
+        <div className="flex flex-col md:flex-row md:px-12 p-3 md:-mb-20 items-center">
           <div className="flex-1 rounded rounded-2xl border-2 border-red-500 -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
             <Image
               alt={"4klabs"}
@@ -19,8 +19,10 @@ export default function Mission() {
               className=" m-auto"
             />
           </div>
-          <div className="flex-1 p-12 z-10 rounded-e-3xl">
-            <h1 className="text-4xl mb-4 font-semibold">Mission</h1>
+          <div className="flex-1 md:p-12 md:pb-20 z-10 rounded-e-3xl">
+            <h1 className="text-lg mt-4 md:text-4xl mb-4 font-semibold">
+              Mission
+            </h1>
             <div>
               <p className="text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -28,15 +30,16 @@ export default function Mission() {
                 optio at laborum, soluta accusamus iusto dignissimos quam
                 dolorem iste atque accusantium ex neque. Culpa recusandae, dolor
                 consequuntur sequi praesentium esse impedit aut natus magnam
-                labore deleniti, voluptatum atque blanditiis ex tempora repellat
-                hic id cumque magni commodi quisquam? Animi qui laboriosam sit
+               
               </p>
             </div>
           </div>
         </div>
-        <div className="flex px-12 p-3 items-center">
-          <div className="flex-1 p-12 z-10 rounded-e-3xl">
-            <h1 className="text-4xl mb-4  font-semibold ">Vision</h1>
+        <div className="flex flex-col-reverse md:flex-row md:px-12 p-3 items-center">
+          <div className="flex-1 md:p-12 z-10 rounded-e-3xl">
+            <h1 className="text-lg mt-4 md:text-4xl mb-4 font-semibold">
+              Vission
+            </h1>
             <div>
               <p className="text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,8 +47,7 @@ export default function Mission() {
                 optio at laborum, soluta accusamus iusto dignissimos quam
                 dolorem iste atque accusantium ex neque. Culpa recusandae, dolor
                 consequuntur sequi praesentium esse impedit aut natus magnam
-                labore deleniti, voluptatum atque blanditiis ex tempora repellat
-                hic id cumque magni commodi quisquam? Animi qui laboriosam sit
+                labore deleniti, 
               </p>
             </div>
           </div>
@@ -63,7 +65,7 @@ export default function Mission() {
           <Link href="/about">
             <button
               onClick={handleSubsribe}
-              className="bg-yellow-500 ml-4 p-3 px-20 rounded rounded-full transform hover:scale-110"
+              className="bg-yellow-500  p-3 px-10 md:px-20 rounded rounded-full transform hover:scale-110"
             >
               Contact us
             </button>

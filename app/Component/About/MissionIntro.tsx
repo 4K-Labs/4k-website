@@ -1,10 +1,10 @@
 export default function MissionText() { 
     return (
       <div className="m-7">
-        <h1 className="text-4xl mb-4 text-yellow-400 font-semibold ">
+        <h1 className="text-lg md:text-4xl md:mb-4 text-yellow-400 font-semibold ">
           Mission And Visson
         </h1>
-        <p className="mt-4">
+        <p className="mt-4  hidden md:block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           voluptatibus dolor pariatur incidunt quae ipsum tenetur asperiores
           fugit a accusantium laboriosam, quod corrupti vero, placeat laborum

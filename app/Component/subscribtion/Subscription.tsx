@@ -27,7 +27,7 @@ export default function Home() {
           />
           <button
             onClick={handleSubsribe}
-            className="bg-yellow-500 my-2 ml-4 p-3 px-10 rounded rounded-full transform hover:scale-110"
+            className="mt-4 md:mt-0text-sm font-semibold bg-yellow-400 my-2 ml-4 py-2 md:py-3 px-4 md:px-10 rounded rounded-full transform hover:scale-110"
           >
             Subscribe
           </button>
