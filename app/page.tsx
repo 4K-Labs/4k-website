@@ -1,5 +1,5 @@
-import Subscription from './Component/subscribtion/Subscription';
-import Footer from './Component/Footer/Footer';
+import Subscription from './components/subscribtion/Subscription';
+import Footer from './components/Footer/Footer';
 export default function Home() {
 
   return (
