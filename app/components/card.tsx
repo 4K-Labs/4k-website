@@ -1,47 +1,48 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TeamMember } from "../types/types";
-import Image from "next/image";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+import { texts } from "./Data";
 
-interface TeamMemberCardProps {
-  memberData: TeamMember;
-}
-
-const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ memberData }) => {
-  const { name, position, description, image, socialLinks } = memberData;
-
+export function Cards() {
   return (
-    <div className="card  shadow-md w-64 hover:shadow-2xl  bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-      <div className="flex flex-col items-start pb-10">
-        <Image
-          src={image}
-          width={150}
-          height={150}
-          className="w-full h-48   border-b-2 p-1"
-          alt={`${name} image`}
-        />
-        <h5 className="mb-1 pl-5 text-xl font-medium text-gray-900 dark:text-white">
-          {name}
-        </h5>
-        <span className="text-sm pl-5 text-gray-500 dark:text-gray-400">
-          {position}
-        </span>
-        <span className="text-sm pl-5 text-start text-gray-500 dark:text-gray-400">
-          {description}
-        </span>
-        <div className="pl-5 mt-5 flex row gap-4">
-          {socialLinks.map((socialLink, index) => (
-            <a key={index} href={socialLink.url}>
-              <FontAwesomeIcon
-                icon={socialLink.icon}
-                className={socialLink.iconClass}
-              />
-            </a>
-          ))}
-        </div>
+    <>
+      <Typography className=" text-center p-8 text-2xl">
+        Events
+      </Typography>
+      <div className="grid  place-content-evenly  lg:flex lg:flex-row  lg:gap-4 md:flex md:flex-row md:flex-wrap  sm:p-4     ">
+        {texts.map((text) => (
+          <div className="p-3 " key={text.id}>
+            <Card className=" mt-6 lg:w-96 md:w-60 md: sm:w-42">
+              <CardHeader color="blue-gray" className="h-56">
+                <img
+                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                  alt="card-image"
+                />
+              </CardHeader>
+              <Typography
+                variant="h5"
+                color="blue-gray"
+                className="m-2 text-center "
+              >
+                {text.title}
+              </Typography>
+              <CardBody>
+                <Typography>{text.body}</Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Button variant="filled" className="">
+                  {text.button}
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        ))}
       </div>
-    </div>
+    </>
   );
-};
-
-export default TeamMemberCard;
+}
