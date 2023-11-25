@@ -1,4 +1,4 @@
-import Faqs from "@/app/components/Faqs"
+import Faqs from "@/app/components/Faq"
 const FAQs = ()=>{
     return (
         <Faqs/>

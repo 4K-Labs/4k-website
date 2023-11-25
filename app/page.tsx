@@ -6,7 +6,7 @@ import Hero from "@/app/components/hero"
 export default function Home() {
 
   return (
-    <div className="bg-primary font-custom tracking-wide>
+    <div className="bg-primary font-custom tracking-wide">
       <Hero/>
       <AboutUs/>
       <Testimony/>

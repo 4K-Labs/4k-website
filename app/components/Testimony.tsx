@@ -1,6 +1,7 @@
 'use client'
 
 import React, { Component } from "react";
+import testimonials from '@/app/data/testimonydata';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -14,44 +15,6 @@ import {
   } from "@material-tailwind/react";
 
 const Testimony = ()=>{
-
-    const testimonials = [
-        {
-          id:0,
-          name: "John Doe",
-          image: "/img/person-1.jpg",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:1,
-          name: "Jane Smith",
-          image: "/img/person-1.jpg",
-          content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:2,
-          name: "Bob Johnson",
-          image: "/img/person-1.jpg",
-          content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:3,
-          name: "Alice Brown",
-          image: "/img/person-1.jpg",
-          content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:4,
-          name: "Chris Green",
-          image: "/img/person-1.jpg",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          title: "Frontend Lead @ Google"
-        },
-      ];
 
     const settings = {
         dots: true,
@@ -99,7 +62,7 @@ const Testimony = ()=>{
                           <Avatar
                               size="lg"
                               variant="circular"
-                              src={testimony.image}
+                              src='/images/person-1.jpg'
                               alt={testimony.name}
                           />
                           <div className="flex w-full flex-col gap-0.5">

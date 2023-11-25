@@ -21,3 +21,16 @@ export interface CardData {
   content: string;
   imageUrl: StaticImageData;
 }
+
+export interface faqData {
+  title:string;
+  content: string;
+}
+
+export interface testimonyData {
+  id:number;
+  name:string;
+  image:string;
+  content:string;
+  title:string;
+}
