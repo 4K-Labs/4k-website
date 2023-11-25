@@ -9,18 +9,18 @@ import Button from "./button";
 const Header = () => {
   let Links = [
     { name: "HOME", link: "/" },
-    { name: "ABOUT", link: "/aboutus" },
+    { name: "ABOUT", link: "/about" },
     { name: "EVENTS", link: "/events" },
     { name: "PROJECTS", link: "/projects" },
     { name: "TEAMS", link: "/teams" },
     { name: "INTERNSHIP", link: "/internship" },
-    { name: "FAQ", link: "/faq" },
+    { name: "FAQ", link: "/faqs" },
   ];
 
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-primary fixed top-0 left-0 w-full shadow-sm">
+    <div className="bg-primary fixed top-0 left-0 w-full shadow-sm z-50">
       <div className="w-3/4 mx-auto pt-5 flex  pr-9 md:pr-0 justify-between items-center font-sans ">
         <div className="cursor-pointer">
           <Image src={logo} width={80} height={60}  alt="logo"/>
