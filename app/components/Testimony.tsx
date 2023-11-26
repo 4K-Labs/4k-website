@@ -24,7 +24,7 @@ const Testimony = ()=>{
         slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
-        nextArrow: <NextArrow className={undefined} style={undefined} onClick={undefined} />,
+        nextArrow: <NextArrow className={"h-12 w-12 bg-red"} style={undefined} onClick={undefined} />,
         prevArrow: <PrevArrow className={undefined} style={undefined} onClick={undefined} />,
         responsive: [
           {
@@ -46,10 +46,10 @@ const Testimony = ()=>{
         };  
       
     return (
-    <div className='w-4/5 m-auto my-8'>
+    <div className='w-4/5 m-auto my-8 py-12'>
         <div className='m-4'>
-          <div className="flex justify-center p-4"><h1 className="text-4xl font-bold">Testimonial</h1></div>
-          <Slider {...settings}>
+          <div className="flex justify-center p-4"><h1 className="text-4xl font-bold p-4">Testimonial</h1></div>
+          <Slider {...settings} className="m-auto">
             {testimonials.map((testimony)=>(
                 <div key={testimony.id} className=''>
                     <Card color="transparent" shadow={false} className="w-64 p-2 bg-white">
@@ -62,7 +62,7 @@ const Testimony = ()=>{
                           <Avatar
                               size="lg"
                               variant="circular"
-                              src='/images/person-1.jpg'
+                              src={testimony.image}
                               alt={testimony.name}
                           />
                           <div className="flex w-full flex-col gap-0.5">
@@ -111,7 +111,7 @@ function NextArrow(props: { className: any; style: any; onClick: any; }) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "gray" }}
+      style={{ ...style, display: "block", background: "gray",}}
       onClick={onClick}
     />
   );
@@ -127,3 +127,4 @@ function PrevArrow(props: { className: any; style: any; onClick: any; }) {
     />
   );
 }
+
