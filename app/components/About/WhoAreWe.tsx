@@ -20,13 +20,13 @@ export default function WhoAreWe() {
             </p>
           </div>
         </div>
-        <div className="flex-1 -ml-4 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
+        <div className="flex-1 -ml-4 transform transition duration-500 hover:scale-110 hover:z-20">
           <Image
             alt={"4klabs"}
             src={"/images/gathering.jpg"}
             width={600}
                     height={500}
-                    className="rounded rounded-2xl"
+                    className="rounded-2xl"
           />
         </div>
       </div>

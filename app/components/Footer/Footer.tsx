@@ -105,7 +105,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col hover:">
             {QuickLinks.map((link) => (
-              <a href={link.Link} className="text-white m-1 hover:underline">
+              <a href={link.Link} className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white">
                 {link.name}
               </a>
             ))}
@@ -115,7 +115,7 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
-              <Link className=" hover:scale-125 hover:bg-black hover:text-white rounded rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
+              <Link className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
             ))}
           </div>
         </div>
