@@ -1,5 +1,7 @@
 'use client'
 import Image from 'next/image'
+import person from '@/public/images/people.avif'
+
 import {
     Card,
     CardHeader,
@@ -9,192 +11,107 @@ import {
     CardFooter
   } from "@material-tailwind/react";
    
+const cardData = [
+{
+    title: 'Bots',
+    image: 'bots.svg',
+    description: "Because it's about motivating the doers.",
+},
+{
+    title: 'Things',
+    image: 'things.svg',
+    description: "Because it's about motivating the doers.",
+},
+{
+    title: 'Dev',
+    image: 'dev.svg',
+    description: "Because it's about motivating the doers.",
+},
+];
 const AboutUs = ()=> {
     return (
-    <div className="flex flex-col items-center bg-white">
-        {/* Title */}
-        <div className="text-4xl text-center p-6" >About Us
-        </div>
-        {/* The About us section */}
-        <div>
-            <Card className="w-full p-4 flex-col md:flex-row shadow-none">
-                
-                <CardBody>
-                    <Typography variant="h4" color="blue-gray" className="mb-2">
-                        Explore About 4k-Labs
-                    </Typography>
-                    <Typography color="gray" className="mb-8 font-normal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor 
-                        incididunt ut labore et dolore magna aliqua.
+    <div className="flex flex-col items-center bg-gray-100">
+
+        <div className="text-left py-12">
+            <h1 className="font-medium leading-10 text-4xl flex justify-center"> About Us </h1>
+            <div className={`w-3/4 m-auto mt-10 border-gray-200 rounded-lg overflow-hidden`}>
+                <div className="flex flex-col lg:flex-row lg:flex-row-reverse">
+                    <div className="lg:w-1/2">
+                        <Image src={person} alt="card-image" className="h-full w-full object-cover" />
+                    </div>
+                    <div className="p-6 lg:w-1/2">
+                        <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">Explore About 4k-Labs</h4>
+                        <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.</p>
+                        <ul className="list-disc text-gray-600 mb-8 ml-10">
+                            <li>4k-Bots: Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li>4k-Dev: Duis aute irure dolor in reprehenderit in voluptate.</li>
+                            <li>4k-Thing: Ulin reprehenderit in voluptate trideta storacalaperda.</li>
+                        </ul>
                         
-                    </Typography>
-                    <ul className="list-disc">
-                        <li>4k-Bots: Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        <li>4k-Dev: Duis aute irure dolor in reprehenderit in voluptate.</li>
-                        <li>4k-Thing: Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                            in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                    </ul>
-                    <a href="#" className="inline-block">
-                        <Button variant="text" className="flex items-center gap-2">
-                        Learn More
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            className="h-4 w-4"
-                        >
-                            <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            />
-                        </svg>
-                        </Button>
-                    </a>
-                </CardBody>
-                <CardHeader
-                    shadow={false}
-                    floated={false}
-                    className="m-0 md:w-2/5 w-full shrink-0 rounded-r-none hidden md:block"
-                >
-                <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-                    alt="card-image"
-                    className="h-full w-full object-cover"
-                />
-                </CardHeader>
-            </Card>
+                        <a href="/aboutus" className="inline-block">
+                            <button className="flex items-center gap-2 bg-transparent border border-grey-800 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-orange-500 hover:text-white">
+                            Learn More
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                className="h-4 w-4"
+                            >
+                                <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                />
+                            </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+      
         </div>
+
+        
+
         {/* the three cards */}
         <div className="flex flex-wrap p-2 md:w-2/3 justify-center">
-            <div className="py-2 w-64 md:w-1/3">
-                <Card className="mt-6 text-center shadow-none">
-                    <CardBody>
-                        <div className="flex bg-brown-700 justify-center rounded-full p-1 m-1">
-                            <Image
-                            src="bots.svg"
-                            alt="bots"
-                            width={300}
-                            height={300}
-
-                            />
+            {cardData.map((data, index) => (
+                <div key={index} className="py-2 w-64 md:w-1/3">
+                    <Card className="mt-6 text-center shadow-none bg-opacity-0">
+                        <CardBody>
+                        <div className="flex bg-brown-600 justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
+                            <Image src={data.image} alt={data.title} width={200} height={200} />
                         </div>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
-                            Bots
+                            {data.title}
                         </Typography>
                         <Typography>
-                            Because it&apos;s about motivating the doers.
+                            {data.description}
                         </Typography>
-                    </CardBody>
-                    <CardFooter className="pt-0">
-                    <a href="#" className="inline-block">
-                        <Button size="sm" variant="text" className="flex items-center gap-2">
-                        Learn More
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="h-4 w-4"
-                        >
-                            <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            />
-                        </svg>
-                        </Button>
-                    </a>
-                    </CardFooter>
-                </Card>
-            </div>
-            <div className="py-2 w-64 md:w-1/3 ">
-                <Card className="mt-6 text-center shadow-none">
-                    <CardBody>
-                        <div className="flex bg-brown-700 justify-center rounded-full p-1 m-1">
-                            <Image
-                            src="things.svg"
-                            alt="things"
-                            width={300}
-                            height={300}
-                            />
-                        </div>
-                        <Typography variant="h5" color="blue-gray" className="mb-2">
-                            Things
-                        </Typography>
-                        <Typography>
-                            Because it&apos;s about motivating the doers. 
-                        </Typography>
-                    </CardBody>
-                    <CardFooter className="pt-0">
-                    <a href="#" className="inline-block">
-                        <Button size="sm" variant="text" className="flex items-center gap-2">
-                        Learn More
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="h-4 w-4"
-                        >
-                            <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            />
-                        </svg>
-                        </Button>
-                    </a>
-                    </CardFooter>
-                </Card>
-            </div>
-            <div className="py-2 w-64 md:w-1/3">
-                <Card className="mt-6 text-center shadow-none">
-                    <CardBody>
-                        <div className="flex bg-brown-700 justify-center rounded-full p-1 m-1">
-                            <Image
-                            src="dev.svg"
-                            alt="dev"
-                            width={300}
-                            height={300}
-
-                            />
-                        </div>
-                        <Typography variant="h5" color="blue-gray" className="mb-2">
-                            Dev
-                        </Typography>
-                        <Typography>
-                            Because it&apos;s about motivating the doers.
-                        </Typography>
-                    </CardBody>
-                    <CardFooter className="pt-0">
-                    <a href="#" className="inline-block">
-                        <Button size="sm" variant="text" className="flex items-center gap-2">
-                        Learn More
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="h-4 w-4"
-                        >
-                            <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            />
-                        </svg>
-                        </Button>
-                    </a>
-                    </CardFooter>
-                </Card>
-            </div>
+                        </CardBody>
+                        <CardFooter className="pt-0">
+                        <a href="/aboutus" className="inline-block">
+                            <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-brown-600 hover:text-white">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4" >
+                                    <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                    />
+                                </svg>
+                            </Button>
+                        </a>
+                        </CardFooter>
+                    </Card>
+                </div>
+            ))}
         </div>
+
     </div>
     );
   }

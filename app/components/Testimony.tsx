@@ -1,6 +1,7 @@
 'use client'
 
 import React, { Component } from "react";
+import testimonials from '@/app/data/testimonydata';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -15,44 +16,6 @@ import {
 
 const Testimony = ()=>{
 
-    const testimonials = [
-        {
-          id:0,
-          name: "John Doe",
-          image: "/img/person-1.jpg",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:1,
-          name: "Jane Smith",
-          image: "/img/person-1.jpg",
-          content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:2,
-          name: "Bob Johnson",
-          image: "/img/person-1.jpg",
-          content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:3,
-          name: "Alice Brown",
-          image: "/img/person-1.jpg",
-          content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          title: "Frontend Lead @ Google"
-        },
-        {
-          id:4,
-          name: "Chris Green",
-          image: "/img/person-1.jpg",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          title: "Frontend Lead @ Google"
-        },
-      ];
-
     const settings = {
         dots: true,
         infinite: true,
@@ -61,7 +24,7 @@ const Testimony = ()=>{
         slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
-        nextArrow: <NextArrow className={undefined} style={undefined} onClick={undefined} />,
+        nextArrow: <NextArrow className={"h-12 w-12 bg-red"} style={undefined} onClick={undefined} />,
         prevArrow: <PrevArrow className={undefined} style={undefined} onClick={undefined} />,
         responsive: [
           {
@@ -83,10 +46,10 @@ const Testimony = ()=>{
         };  
       
     return (
-    <div className='w-4/5 m-auto my-8'>
+    <div className='w-4/5 m-auto my-8 py-12'>
         <div className='m-4'>
-          <div className="flex justify-center p-4"><h1 className="text-4xl font-bold">Testimonial</h1></div>
-          <Slider {...settings}>
+          <div className="flex justify-center p-4"><h1 className="text-4xl font-bold p-4">Testimonial</h1></div>
+          <Slider {...settings} className="m-auto">
             {testimonials.map((testimony)=>(
                 <div key={testimony.id} className=''>
                     <Card color="transparent" shadow={false} className="w-64 p-2 bg-white">
@@ -148,7 +111,7 @@ function NextArrow(props: { className: any; style: any; onClick: any; }) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "gray" }}
+      style={{ ...style, display: "block", background: "gray",}}
       onClick={onClick}
     />
   );
@@ -164,3 +127,4 @@ function PrevArrow(props: { className: any; style: any; onClick: any; }) {
     />
   );
 }
+
