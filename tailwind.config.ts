@@ -12,12 +12,10 @@ const config: Config = withMT({
   theme: {
     extend: {
       colors: {
-        footer: "#676767",
-        brown: "#8D5F3C",
-      },
-      colors: {
         'primary': '#EBEBEB',
-        'secondary': '#F6F6F6'
+        'secondary': '#F6F6F6',
+         footer: "#676767",
+        brown: "#8D5F3C",
       }
     },
     fontFamily: {

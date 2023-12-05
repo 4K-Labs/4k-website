@@ -30,7 +30,6 @@ export default function Mission() {
                 optio at laborum, soluta accusamus iusto dignissimos quam
                 dolorem iste atque accusantium ex neque. Culpa recusandae, dolor
                 consequuntur sequi praesentium esse impedit aut natus magnam
-               
               </p>
             </div>
           </div>
@@ -47,7 +46,7 @@ export default function Mission() {
                 optio at laborum, soluta accusamus iusto dignissimos quam
                 dolorem iste atque accusantium ex neque. Culpa recusandae, dolor
                 consequuntur sequi praesentium esse impedit aut natus magnam
-                labore deleniti, 
+                labore deleniti,
               </p>
             </div>
           </div>
@@ -65,7 +64,7 @@ export default function Mission() {
           <Link href="/about">
             <button
               onClick={handleSubsribe}
-              className="bg-yellow-500  p-3 px-10 md:px-20 rounded rounded-full transform hover:scale-110"
+              className="bg-orange-400 p-3 font-semibold px-10 md:px-20 rounded-full transform hover:scale-110 duration-300"
             >
               Contact us
             </button>
