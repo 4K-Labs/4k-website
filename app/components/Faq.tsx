@@ -13,9 +13,9 @@ const Faq = () => {
 
     return (
         
-        <div className="md:flex md:flex-row h-full w-full py-36 m-auto justify-around items-center self-center">
+        <div className="md:flex w-full mt-40 mb-6 justify-around items-stretch">
             {/* Left Div - Content */}
-            <div className=" flex flex-col justify-between md:w-1/2 p-12 h-screen md:order-1 bg-primary">
+            <div className=" flex flex-col justify-between md:w-1/2 p-12 md:order-1 bg-primary">
                 <div>
                    <div className="text-4xl font-bold mb-4">Frequently Asked Questions</div>
                     <p className="text-lg text-orange-400">
@@ -26,7 +26,7 @@ const Faq = () => {
                 <div className="mt-auto">
                     
                     <ul className="mt-12 space-y-8">
-                    <p className='text-orange-400'>If you have any questions, reach out to us via </p>
+                        <p className='text-orange-400'>If you have any questions, reach out to us via </p>
                         <li className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" 
                                 viewBox="0 0 479.058 479.058">
@@ -50,7 +50,7 @@ const Faq = () => {
             </div>
 
             {/* Right Div - FAQs */}
-            <div className="md:w-1/2 max-w-2xl mx-auto mt-8 p-12 md:order-2 h-screen">
+            <div className="md:w-1/2 max-w-2xl mx-auto mt-8 p-12 md:order-2">
                 <div>
                     {faqs.map((faq, idx) => (
                         <div key={idx} className="border-b border-orange-400 m-8 min-w-lg">
