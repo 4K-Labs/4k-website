@@ -61,7 +61,7 @@ export default function Mission() {
           </div>
         </div>
         <div className="text-center m-20">
-          <Link href="/about">
+          <Link href="/contactus">
             <button
               onClick={handleSubsribe}
               className="bg-orange-400 p-3 font-semibold px-10 md:px-20 rounded-full transform hover:scale-110 duration-300"

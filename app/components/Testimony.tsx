@@ -15,16 +15,21 @@ import {
   } from "@material-tailwind/react";
 
 const Testimony = ()=>{
-
     const settings = {
         dots: true,
         infinite: true,
+        centerMode: true,
+        centerPadding: "0",
         speed: 500,
+        draggable: true,
         initialSlide: 1,
         slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
-        nextArrow: <NextArrow className={"h-12 w-12 bg-red"} style={undefined} onClick={undefined} />,
+        cssEase: 'linear',
+        variableWidth: true,
+        variableHeight: true,
+        nextArrow: <NextArrow className={undefined} style={undefined} onClick={undefined} />,
         prevArrow: <PrevArrow className={undefined} style={undefined} onClick={undefined} />,
         responsive: [
           {
@@ -51,8 +56,8 @@ const Testimony = ()=>{
           <div className="flex justify-center p-4"><h1 className="text-4xl font-bold p-4">Testimonial</h1></div>
           <Slider {...settings} className="m-auto">
             {testimonials.map((testimony)=>(
-                <div key={testimony.id} className=''>
-                    <Card color="transparent" shadow={false} className="w-64 p-2 bg-white">
+                <div key={testimony.id} className='m-2'>
+                    <Card color="transparent" shadow={false} className="w-64 p-2 bg-white m-4">
                         <CardHeader
                         color="transparent"
                         floated={false}
@@ -116,6 +121,8 @@ function NextArrow(props: { className: any; style: any; onClick: any; }) {
     />
   );
 }
+
+
 
 function PrevArrow(props: { className: any; style: any; onClick: any; }) {
   const { className, style, onClick } = props;

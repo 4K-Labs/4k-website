@@ -49,7 +49,7 @@ const AboutUs = ()=> {
                             <li>4k-Thing: Ulin reprehenderit in voluptate trideta storacalaperda.</li>
                         </ul>
                         
-                        <a href="/aboutus" className="inline-block">
+                        <a href="/about" className="inline-block">
                             <button className="flex items-center gap-2 bg-transparent border border-grey-800 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-orange-500 hover:text-white">
                             Learn More
                             <svg
@@ -75,15 +75,13 @@ const AboutUs = ()=> {
       
         </div>
 
-        
-
         {/* the three cards */}
         <div className="flex flex-wrap p-2 md:w-2/3 justify-center">
             {cardData.map((data, index) => (
                 <div key={index} className="py-2 w-64 md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0">
                         <CardBody>
-                        <div className="flex bg-brown-600 justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
+                        <div className="flex bg-gray-800 justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
                             <Image src={data.image} alt={data.title} width={200} height={200} />
                         </div>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -94,8 +92,8 @@ const AboutUs = ()=> {
                         </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
-                        <a href="/aboutus" className="inline-block">
-                            <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-brown-600 hover:text-white">
+                        <a href="/about" className="inline-block">
+                            <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-black hover:text-white">
                                 Learn More
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4" >
                                     <path
