@@ -57,7 +57,7 @@ const Testimony = ()=>{
           <Slider {...settings} className="mx-auto px-10">
             {testimonials.map((testimony)=>(
                 <div key={testimony.id} className=''>
-                    <Card color="transparent" shadow={false} className="w-64 p-2 shadow-xl h-72 bg-white">
+                    <Card color="transparent" shadow={false} className="w-64 m-6 p-2 shadow-xl h-72 bg-white">
                         <CardHeader
                         color="transparent"
                         floated={false}
