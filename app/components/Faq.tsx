@@ -13,7 +13,7 @@ const Faq = () => {
 
     return (
         
-        <div className="md:flex w-full mt-40 mb-6 justify-around items-stretch">
+        <div className="md:flex md:flex-row mb-56 h-full w-full py-36 m-auto justify-around items-center self-center">
             {/* Left Div - Content */}
             <div className=" flex flex-col justify-between md:w-1/2 p-12 md:order-1 bg-primary">
                 <div>

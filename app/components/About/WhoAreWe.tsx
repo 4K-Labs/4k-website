@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function WhoAreWe() {
     return (
-      <div className="flex flex-col-reverse md:flex-row md:px-12 p-3 m-7">
+      <div className="flex flex-col-reverse md:flex-row  p-3">
         <div className="flex-1 bg-gray-100 p-6 md:p-12 z-10 rounded-e-3xl">
           <h1 className="text-lg md:text-4xl mb-4 text-yellow-400 font-semibold text-center">
             Who Are We

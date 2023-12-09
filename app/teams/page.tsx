@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import TeamMemberCard from "../components/card";
+import TeamMemberCard from "../components/teammember";
 import { TeamMember } from "../types/types";
 import { teamData } from "../data/teamdata";
 import { DefaultPagination } from "../components/pagination";
@@ -27,7 +27,7 @@ const Teams = () => {
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
            vero iusto officiis deserunt sit ipsa neque illum ducimus! Ut, autem?
          </p>
-        <div className=" flex-grow  justify-start flex-wrap flex flex-col md:flex md:flex-row items-center md:flex-wrap gap-6 md:gap-3 mt-10 pb-20">
+       <div className=" flex-grow w-full justify-start flex-wrap flex flex-col md:flex md:flex-row items-center md:flex-wrap gap-6 md:gap-5 mt-10 pb-20">
             {currentMembers.map((member: TeamMember, index: number) => (
           <TeamMemberCard key={index} memberData={member} />
         ))}

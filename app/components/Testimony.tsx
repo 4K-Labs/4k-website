@@ -54,10 +54,10 @@ const Testimony = ()=>{
     <div className='w-4/5 m-auto my-8 py-12'>
         <div className='m-4'>
           <div className="flex justify-center p-4"><h1 className="text-4xl font-bold p-4">Testimonial</h1></div>
-          <Slider {...settings} className="m-auto">
+          <Slider {...settings} className="mx-auto px-10">
             {testimonials.map((testimony)=>(
-                <div key={testimony.id} className='m-2'>
-                    <Card color="transparent" shadow={false} className="w-64 p-2 bg-white m-4">
+                <div key={testimony.id} className=''>
+                    <Card color="transparent" shadow={false} className="w-64 p-2 shadow-xl h-72 bg-white">
                         <CardHeader
                         color="transparent"
                         floated={false}
