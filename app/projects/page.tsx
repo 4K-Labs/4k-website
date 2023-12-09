@@ -8,6 +8,10 @@ import { CircularPagination } from "./Pagination";
 import Logo from "@/app/components/4klogo";
 
 const Project = () => {
+  const cards = [];
+  for (let i = 0; i < 8; i++) {
+    cards.push(<ProjectCard key={i} />);
+  }
   return (
     <main className="... mt-24">
       <div className="flex text-3xl ">
@@ -35,14 +39,7 @@ const Project = () => {
         </div>
       </div>
       <div className="flex flex-row flex-wrap  md:gap-12 items-center justify-center  ">
-        {(() => {
-          const cards = [];
-
-          for (let i = 0; i < 8; i++) {
-            cards.push(<ProjectCard />);
-          }
-          return cards;
-        })()}
+        {cards}
       </div>
       <div className="">
         <CircularPagination />
