@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Mission() {
-    const handleSubsribe = (e) => {
-      e.preventDefault();
-    };
+    // const handleSubsribe = (e) => {
+    //   e.preventDefault();
+    // };
 
     return (
-      <div className="p-7">
+      <div className="">
         <div className="flex flex-col md:flex-row md:px-12 p-3 md:-mb-20 items-center">
-          <div className="flex-1 rounded rounded-2xl border-2 border-red-500 -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
+          <div className="flex-1 rounded-2xl border-2 border-red-500 -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
             <Image
               alt={"4klabs"}
               src={"/images/4klabs.png"}
@@ -50,7 +50,7 @@ export default function Mission() {
               </p>
             </div>
           </div>
-          <div className="flex-1 rounded rounded-2xl border-2 border-red-500 -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
+          <div className="flex-1 rounded-2xl border-2 border-red-500 -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
             <Image
               alt={"4klabs"}
               src={"/images/4klabs.png"}
@@ -63,7 +63,7 @@ export default function Mission() {
         <div className="text-center m-20">
           <Link href="/contactus">
             <button
-              onClick={handleSubsribe}
+              onClick={() => window.location.href = '/contactus'}
               className="bg-orange-400 p-3 font-semibold px-10 md:px-20 rounded-full transform hover:scale-110 duration-300"
             >
               Contact us

@@ -13,7 +13,7 @@ const Header = () => {
     { name: "EVENTS", link: "/events" },
     { name: "PROJECTS", link: "/projects" },
     { name: "TEAMS", link: "/teams" },
-    { name: "INTERNSHIP", link: "/internship" },
+    // { name: "INTERNSHIP", link: "/internship" },
     { name: "FAQ", link: "/faqs" },
   ];
 
@@ -39,7 +39,7 @@ const Header = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-6 text-md md:my-4 my-7">
+            <li key={link.name} className="md:ml-6 text-lg md:my-4 my-7">
               <a
                 href={link.link}
                 className="text-gray-800 hover:text-orange-400 duration-500"

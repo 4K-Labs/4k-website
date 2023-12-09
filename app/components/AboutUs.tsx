@@ -35,7 +35,7 @@ const AboutUs = ()=> {
         <div className="text-left py-12">
             <h1 className="font-medium leading-10 text-4xl flex justify-center"> About Us </h1>
             <div className={`w-3/4 m-auto mt-10 border-gray-200 rounded-lg overflow-hidden`}>
-                <div className="flex flex-col lg:flex-row lg:flex-row-reverse">
+                <div className="flex flex-col  lg:flex-row-reverse">
                     <div className="lg:w-1/2">
                         <Image src={person} alt="card-image" className="h-full w-full object-cover" />
                     </div>
@@ -81,8 +81,8 @@ const AboutUs = ()=> {
                 <div key={index} className="py-2 w-64 md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0">
                         <CardBody>
-                        <div className="flex bg-gray-800 justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
-                            <Image src={data.image} alt={data.title} width={200} height={200} />
+                        <div className="flex bg-brown-600  justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
+                            <Image src={data.image} className='brightness-90 shadow-md mb-4' alt={data.title} width={200} height={200} />
                         </div>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
                             {data.title}

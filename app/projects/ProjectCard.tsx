@@ -32,7 +32,7 @@ export function ProjectCard() {
         </CardBody>
         <CardFooter className="pt-3">
           <Button className="bgbrown" size="lg" fullWidth={true}>
-            Virw more
+            View more
           </Button>
         </CardFooter>
       </Card>

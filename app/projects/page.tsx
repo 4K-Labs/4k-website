@@ -9,7 +9,7 @@ import Logo from "@/app/components/4klogo";
 
 const Project = () => {
   return (
-    <main className="...">
+    <main className="... mt-24">
       <div className="flex text-3xl ">
         <div className="flex-1 w-screen lg:flex-auto lg:w-7/12 lg:h-7/12 md:h-7/12 md:7/12 sm:7/12  py-56 px-16 justify-start items-center ">
           <div>
