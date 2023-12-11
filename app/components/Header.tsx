@@ -23,7 +23,7 @@ const Header = () => {
     <div className="bg-primary fixed top-0 left-0 w-full shadow-sm z-50">
       <div className="w-3/4 mx-auto pt-5 flex  pr-9 md:pr-0 justify-between items-center font-sans ">
         <div className="cursor-pointer">
-          <Image src={logo} width={80} height={60}  alt="logo"/>
+          <Image src="/images/4klabs.png" width={80} height={60} alt="logo" />
         </div>
 
         <div
@@ -48,13 +48,9 @@ const Header = () => {
               </a>
             </li>
           ))}
-          
         </ul>
         <Button>Donate</Button>
-
-        
       </div>
-      
     </div>
   );
 };
