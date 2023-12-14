@@ -119,7 +119,7 @@ export default function Home() {
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
               <Link
-                className=" hover:scale-125 bg-gray-900 hover:text-white rounded-full md:p-1"
+                className=" hover:scale-125 bg-brown-900 hover:text-white rounded-full md:p-1"
                 href={icon.address}
               >
                 {icon.icon}
