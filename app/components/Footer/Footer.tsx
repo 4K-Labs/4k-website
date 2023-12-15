@@ -12,22 +12,27 @@ import Link from "next/link";
 export default function Home() {
   const QuickLinks = [
     {
+      id: 1,
       name: "about",
       Link: "/about",
     },
     {
+      id: 2,
       name: "projects",
       Link: "/projects",
     },
     {
+      id: 3,
       name: "Trainings",
       Link: "/trainings",
     },
     {
+      id: 4,
       name: "Team members",
       Link: "/team",
     },
     {
+      id: 5,
       name:"Events",
       Link:"/events"
     }
@@ -35,36 +40,44 @@ export default function Home() {
 
   const Contact = [
     {
+      id: 1,
       icon: <LocationOnOutlinedIcon />,
       name: "AAU . 4 kilo",
     },
     {
+      id: 2,
       icon: <MailOutlineOutlinedIcon />,
       name: "4klabs@aau.edu.et",
     },
     {
+      id: 3,
       icon: <PhoneIcon />,
       name: "0909090909",
     },
   ];
   const SocialMedia = [
     {
+      id: 1,
       icon: <FacebookOutlinedIcon />,
       address: "https://www.facebook.com/4klabs",
     },
     {
+      id: 2,
       icon: <LinkedInIcon />,
       address: "https://www.linkedin.com/company/4klabs",
     },
     {
+      id: 3,
       icon: <InstagramIcon />,
       address: "https://www.instagram.com/4klabs",
     },
     {
+      id: 4,
       icon: <TwitterIcon />,
       address: "https://www.twitter.com/4klabs",
     },
     {
+      id: 5,
       icon: <TelegramIcon />,
       address: "https://www.telegram.com/4klabs",
     },
@@ -89,7 +102,7 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
             {Contact?.map((address) => (
-              <div className="flex flex-row m-2">
+              <div className="flex flex-row m-2" key={address.id}>
                 {address.icon}
                 <p>{address.name}</p>
               </div>
@@ -105,7 +118,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col hover:">
             {QuickLinks.map((link) => (
-              <a href={link.Link} className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white">
+              <a key={link.id} href={link.Link} className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white">
                 {link.name}
               </a>
             ))}
@@ -115,7 +128,7 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
-              <Link className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
+              <Link key={icon.id} className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
             ))}
           </div>
         </div>
