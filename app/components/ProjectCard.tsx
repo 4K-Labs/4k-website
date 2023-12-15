@@ -9,7 +9,7 @@ import {
 import { Cards } from "./Card";
 import { values } from "./Data";
 
-export function HorizontalCard() {
+export default function HorizontalCard() {
   return (
     <>
       <Typography className="text-center text-2xl p-7 font-bold">
