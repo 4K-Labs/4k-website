@@ -14,7 +14,9 @@ const config: Config = withMT({
       colors: {
         'primary': '#EBEBEB',
         'secondary': '#F6F6F6',
-         footer: "#676767",
+        'primaryColor': '#AA7f54',
+        'secondaryColor': '#D2D2D2',
+        footer: "#676767",
         brown: "#8D5F3C",
       }
     },

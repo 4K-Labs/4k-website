@@ -81,8 +81,8 @@ const AboutUs = ()=> {
                 <div key={index} className="py-2 w-64 md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0">
                         <CardBody>
-                        <div className="flex bg-brown-600  justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
-                            <Image src={data.image} className='brightness-90 shadow-md mb-4' alt={data.title} width={200} height={200} />
+                        <div className="flex justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
+                            <Image src={data.image} className='mb-4 fill-black' alt={data.title} width={200} height={200} />
                         </div>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
                             {data.title}
