@@ -7,10 +7,10 @@ export function CircularPagination() {
 
   const getItemProps = (index: React.SetStateAction<number>) =>
     ({
-      variant: active === index ? "" : "text",
-      color: "",
+      variant: active === index ? "filled" : "text",
+      color: "orange",
       onClick: () => setActive(index),
-      className: " text-4k-brown",
+      className: "",
     } as any);
 
   const next = () => {
@@ -30,7 +30,7 @@ export function CircularPagination() {
       <div className="">
         <Button
           variant="text"
-          className="md:flex  items-center gap-2 rounded-full text-4k-brown hidden"
+          className="md:flex  items-center gap-2 rounded-full hidden"
           onClick={prev}
           disabled={active === 1}
         >
@@ -38,26 +38,46 @@ export function CircularPagination() {
         </Button>
       </div>
       <div className="flex items-center gap-10 text-4xl ">
-        <IconButton style={{ background: "none" }} {...getItemProps(1)}>
+        <IconButton
+          style={{ background: "none" }}
+         
+          {...getItemProps(1)}
+        >
           1
         </IconButton>
-        <IconButton style={{ background: "none" }} {...getItemProps(2)}>
+        <IconButton
+          style={{ background: "none" }}
+         
+          {...getItemProps(2)}
+        >
           2
         </IconButton>
-        <IconButton style={{ background: "none" }} {...getItemProps(3)}>
+        <IconButton
+          style={{ background: "none" }}
+         
+          {...getItemProps(3)}
+        >
           3
         </IconButton>
-        <IconButton style={{ background: "none" }} {...getItemProps(4)}>
+        <IconButton
+          style={{ background: "none" }}
+          
+          {...getItemProps(4)}
+        >
           4
         </IconButton>
-        <IconButton style={{ background: "none" }} {...getItemProps(5)}>
+        <IconButton
+          style={{ background: "none" }}
+         
+          {...getItemProps(5)}
+        >
           5
         </IconButton>
       </div>
       <div className="md:flex hidden">
         <Button
           variant="text"
-          className="flex items-center gap-2 rounded-full text-4k-brown  "
+          className="flex items-center gap-2 rounded-full  "
           onClick={next}
           disabled={active === 5}
         >
