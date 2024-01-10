@@ -1,10 +1,8 @@
 
 import Subscription from '@/app/components/subscribtion/Subscription';
 import AboutUs from '@/app/components/AboutUs'
-import Testimony from '@/app/components/Testimony/Testimony'
 import Hero from "@/app/components/hero"
-import TestimonyMobile from './components/Testimony/TestimonyMobile';
-import Testimonial from './components/Testimony/Testimony';
+import Testimony from './components/Testimony/Testimony';
 export default function Home() {
 
   return (
