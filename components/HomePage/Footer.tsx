@@ -90,8 +90,8 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
             {Contact?.map((address) => (
-              <div className="flex flex-row m-2">
-                {address.icon}
+              <div className="flex  m-2 gap-4">
+                <span className="m-2">{address.icon}</span>
                 <p className="whitespace-nowrap">{address.name}</p>
               </div>
             ))}
