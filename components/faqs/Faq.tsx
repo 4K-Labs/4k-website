@@ -18,7 +18,7 @@ const Faq = () => {
             <div className=" flex flex-col justify-between md:w-1/2 p-12 md:order-1 bg-primary">
                 <div>
                    <div className="text-4xl font-bold mb-4">Frequently Asked Questions</div>
-                    <p className="text-lg text-orange-400">
+                    <p className="text-lg text-[#AF7F54]">
                         If you have any questions, you might find the answers here. If not, feel free to contact us.
                     </p> 
                 </div>
@@ -26,7 +26,7 @@ const Faq = () => {
                 <div className="mt-auto">
                     
                     <ul className="mt-12 space-y-8">
-                        <p className='text-orange-400'>If you have any questions, reach out to us via </p>
+                        <p className='text-[#AF7F54]'>If you have any questions, reach out to us via </p>
                         <li className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" 
                                 viewBox="0 0 479.058 479.058">
@@ -55,7 +55,7 @@ const Faq = () => {
                     {faqs.map((faq, idx) => (
                         <div key={idx} className="border-b border-orange-400 m-8 min-w-lg">
                             <div className="flex justify-between items-center">
-                                <div className="text-lg text-orange-400 font-semibold py-1">{faq.title}</div>
+                                <div className="text-lg text-[#AF7F54] font-semibold py-1">{faq.title}</div>
                                 <button
                                     onClick={() => setExpandedIdx(expandedIdx === idx ? null : idx)}
                                 >

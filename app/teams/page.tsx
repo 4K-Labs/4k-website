@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from "react";
-import TeamMemberCard from "../components/teammember";
+import TeamMemberCard from "../../components/Teams/teammember";
 import { TeamMember } from "../types/types";
 import { teamData } from "../data/teamdata";
-import { DefaultPagination } from "../components/pagination";
+import { DefaultPagination } from "../../components/pagination";
 
 const Teams = () => {
   const itemsPerPage: number = 4; 
