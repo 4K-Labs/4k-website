@@ -29,14 +29,14 @@ const AboutCard: React.FC<AboutCardProps> = ({
         height={450}
       />
     </div>
-    <div className="mt-8 w-full lg:mt-0 lg:w-1/2 px-4">
+    <div className="mt-8 w-full lg:mt-0 lg:w-1/2 px-4  border-l-2 border-l-orange-700">
       <h3 className="mb-2 inline-block text-4xl font-bold  text-orange-600  font-heading">
         <span className="border-b-4 border-orange-700 dark:border-white text-gray-700 dark:text-white">
           {blackTitle}
         </span>{" "}
         {orangeTitle}
       </h3>
-      <p className="mt-4 text-gray-600 dark:text-gray-300 text-xl">
+      <p className="mt-4 text-gray-600 text-lg">
         {description}
       </p>
     </div>

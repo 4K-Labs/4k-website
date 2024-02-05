@@ -80,11 +80,6 @@ export default function Home() {
             computer science department. Focusing in the area of AI, Robotics,
             and embedded systems
           </p>
-          {/* <p className="hidden md:inline-block px-2">
-            where there are teams of curious innovators from different
-            disciplines of study, working together in the focus area of AI,
-            Robotics, embedded systems, tiny ML, and software development.
-          </p> */}
         </div>
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
@@ -92,7 +87,7 @@ export default function Home() {
             {Contact?.map((address) => (
               <div className="flex flex-row m-2">
                 {address.icon}
-                <p>{address.name}</p>
+                <p className="whitespace-nowrap">{address.name}</p>
               </div>
             ))}
           </div>
@@ -120,7 +115,7 @@ export default function Home() {
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
               <Link
-                className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1"
+                className="bg-white shadow-lg text-blue-500 hover:scale-123 hover:bg-black  transition-colors duration-500 hover:text-white rounded-full md:p-1"
                 href={icon.address}
               >
                 {icon.icon}
