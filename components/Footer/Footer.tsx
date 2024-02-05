@@ -14,11 +14,11 @@ import Link from "next/link";
 export default function Home() {
   const QuickLinks = [
     {
-      name: "about",
+      name: "About",
       Link: "/about",
     },
     {
-      name: "projects",
+      name: "Projects",
       Link: "/projects",
     },
     {
@@ -109,7 +109,7 @@ export default function Home() {
             {QuickLinks.map((link) => (
               <a
                 href={link.Link}
-                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline  transition-transform duration-500   underline-white"
+                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline  transition-transform duration-500 "
               >
                 {link.name}
               </a>
@@ -118,7 +118,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
-          <div className="flex gap-3 flex-row m-3 ">
+          <div className="flex gap-3 flex-row m-3 flex-wrap md:flex-nowrap">
             {SocialMedia.map((icon) => (
               <Link
                 className="bg-white shadow-lg text-blue-500 hover:scale-125   transition-transform duration-500  rounded-full md:p-1"

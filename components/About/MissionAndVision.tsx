@@ -69,7 +69,7 @@ export default function Mission() {
           <Link href="/contactus">
             <button
               onClick={() => (window.location.href = "/contactus")}
-              className="bg-orange-400 p-3 font-semibold px-10 md:px-20 rounded-full transform hover:scale-110 duration-300"
+              className="bg-primary text-white p-3 font-semibold px-10 md:px-20 rounded-full transform hover:scale-110 duration-300"
             >
               Contact us
             </button>
