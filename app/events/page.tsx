@@ -1,4 +1,4 @@
-import HorizontalCard from "../components/horizontalcard";
+import HorizontalCard from "../../components/horizontalcard";
 import cardData from '../data/eventdata';
 import { CardData } from "../types/types";
 

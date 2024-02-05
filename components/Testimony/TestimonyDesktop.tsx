@@ -5,6 +5,7 @@ import testimonials from '@/app/data/testimonydata';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image'
 
 import {
     Card,
@@ -12,6 +13,7 @@ import {
     CardBody,
     Typography,
     Avatar,
+    CardFooter,
   } from "@material-tailwind/react";
 
 const TestimonyDesktop = ()=>{
@@ -23,53 +25,43 @@ const TestimonyDesktop = ()=>{
         speed: 500,
         draggable: true,
         initialSlide: 1,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: true,
+        className:"slides",
         cssEase: 'linear',
-        variableWidth: true,
-        variableHeight: true,
-        nextArrow: <NextArrow className={undefined} style={undefined} onClick={undefined} />,
-        prevArrow: <PrevArrow className={undefined} style={undefined} onClick={undefined} />,
-        responsive: [
-          {
-            breakpoint: 1000,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              
-            }
-          },
-          {
-            breakpoint: 700,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+        // variableWidth: true,
+        // variableHeight: true,
+        nextArrow: <NextArrow className={"w-6"} style={undefined} onClick={undefined} />,
+        prevArrow: <PrevArrow className={"w-12"} style={undefined} onClick={undefined}  />,
         };  
       
     return (
-    <div className='w-4/5 m-auto my-8 py-12'>
-        <div className='m-4'>
-          <Slider {...settings} className="mx-auto px-10">
+      <div className='w-full px-6 md:px-28 lg:px-40 m-auto py-40'>
+        
+          <Slider {...settings} className="mx-auto h-full">
             {testimonials.map((testimony)=>(
                 <div key={testimony.id} className=''>
-                    <Card color="transparent" shadow={false} className="w-64 m-6 p-2 shadow-xl h-72 bg-white">
+                    <Card color="transparent" shadow={false} className="w-full p-6 shadow-xl h-full bg-white">
                         <CardHeader
                         color="transparent"
                         floated={false}
                         shadow={false}
-                        className="mx-0 flex items-center gap-4 pt-0 pb-4"
+                        className="mx-0 flex flex-col items-center gap-4 pt-0 pb-1"
                         >
-                          <Avatar
-                              size="lg"
-                              variant="circular"
-                              src={testimony.image}
-                              alt={testimony.name}
-                          />
-                          <div className="flex w-full flex-col gap-0.5">
+                          <Image className="w-36 h-36 rounded-full" width={500} height={500} src={testimony.image} alt={testimony.name}/>      
+                        </CardHeader>
+                        <CardBody className="pb-1 text-center">
+                            <Typography>{testimony.content}</Typography>
+                        </CardBody>
+                        <CardFooter>
+                          <div className="flex w-full flex-col items-center">
+                            <Avatar
+                                size="lg"
+                                variant="circular"
+                                src={"/images/quote-svgrepo-com.svg"}
+                                alt={""}
+                            />
                               <div className="flex items-center justify-between">
                               <Typography variant="h5" color="blue-gray">
                                   {testimony.name}
@@ -77,17 +69,14 @@ const TestimonyDesktop = ()=>{
                               </div>
                               <Typography color="blue-gray">{testimony.title}</Typography>
                           </div>
-                        </CardHeader>
-                        <CardBody className="mb-6 p-0">
-                            <Typography>{testimony.content}</Typography>
-                        </CardBody>
+                        </CardFooter>
                     </Card>
                 </div>
             ))}
           </Slider>
         </div>
 
-    </div>
+  
     )
 }
 

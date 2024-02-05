@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../public/images/4klogo.png";
 import Image from "next/image";
-import Button from "./button";
+import Button from "../button";
 
-const Header = () => {
+const NavBar = () => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "/about" },
@@ -59,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
