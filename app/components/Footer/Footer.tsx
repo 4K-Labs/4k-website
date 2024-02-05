@@ -36,7 +36,7 @@ export default function Home() {
   const Contact = [
     {
       icon: <LocationOnOutlinedIcon />,
-      name: "AAU . 4 kilo",
+      name: "AAU, CNCS Campus, 4 Kilo",
     },
     {
       icon: <MailOutlineOutlinedIcon />,
@@ -44,7 +44,7 @@ export default function Home() {
     },
     {
       icon: <PhoneIcon />,
-      name: "0909090909",
+      name: " +251921307934",
     },
   ];
   const SocialMedia = [
@@ -75,15 +75,16 @@ export default function Home() {
         <div className="flex flex-col text-white ">
           <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
           <p className="inline-block px-2">
-            Some thing about 4K labs can be written here Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Beatae excepturi accusantium
-            Lorem ipsum
+            4K Labs is R & D laboratory in Addis Ababa University located in the
+            College of Natural and Computational Science(CNCS) under the
+            computer science department. Focusing in the area of AI, Robotics,
+            and embedded systems
           </p>
-          <p className="hidden md:inline-block px-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil
-            adipisci quia saepe odio numquam, ex quasi recusandae eum error
-            harum ea et non, aut impedit ducimus fugit dolorum? Id.
-          </p>
+          {/* <p className="hidden md:inline-block px-2">
+            where there are teams of curious innovators from different
+            disciplines of study, working together in the focus area of AI,
+            Robotics, embedded systems, tiny ML, and software development.
+          </p> */}
         </div>
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
@@ -105,7 +106,10 @@ export default function Home() {
           </h1>
           <div className="flex flex-col hover:">
             {QuickLinks.map((link) => (
-              <a href={link.Link} className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white">
+              <a
+                href={link.Link}
+                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white"
+              >
                 {link.name}
               </a>
             ))}
@@ -115,7 +119,12 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
-              <Link className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
+              <Link
+                className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1"
+                href={icon.address}
+              >
+                {icon.icon}
+              </Link>
             ))}
           </div>
         </div>
