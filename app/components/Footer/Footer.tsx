@@ -6,6 +6,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import Link from "next/link";
 
@@ -68,6 +69,10 @@ export default function Home() {
       icon: <TelegramIcon />,
       address: "https://www.telegram.com/4klabs",
     },
+    {
+      icon: <WhatsAppIcon />,
+      address:"https://www.whatsapp.com/4klabs"
+    }
   ];
   return (
     <div className="bg-footer text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
@@ -115,7 +120,7 @@ export default function Home() {
           <div className="flex gap-3 flex-row m-3 ">
             {SocialMedia.map((icon) => (
               <Link
-                className="bg-white shadow-lg text-blue-500 hover:scale-123 hover:bg-black  transition-colors duration-500 hover:text-white rounded-full md:p-1"
+                className="bg-white shadow-lg text-blue-500 hover:scale-125   transition-transform duration-500  rounded-full md:p-1"
                 href={icon.address}
               >
                 {icon.icon}

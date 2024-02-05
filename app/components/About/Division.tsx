@@ -1,19 +1,16 @@
 export default function MissionText() {
   return (
     <div className="m-7">
-      <h1 className="text-lg md:text-4xl md:mb-4  font-semibold ">
-        Mission And Visson
-      </h1>
-      <p className="mt-4  hidden md:block">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-        voluptatibus dolor pariatur incidunt quae ipsum tenetur asperiores fugit
-        a accusantium laboriosam, quod corrupti vero, placeat laborum maxime
-        distinctio facilis magni enim porro est. Eum quod quibusdam, velit
-        libero unde aspernatur quasi sunt, quia magnam culpa quae ipsam
-        provident repudiandae? Veniam voluptates eos quo fuga sit ut obcaecati
-        quibusdam quos in libero cum blanditiis minima facere, odio porro ad
-        aliquid soluta laboriosam possimus. Nesciunt beatae minima maiores
-        maxime consequatur possimus repudiandae.
+      <p className="mt-4  text-xl">
+        The motivation of the 4K Labs is to bring students from different
+        disciplines together to create an interdisciplinary research environment
+        in AAU. In the lab, a group of curious students come together to change
+        their idea into a reality. Members and interns in the lab update their
+        skills through project-based learning, where members of the lab will
+        keep on learning by iterating possible solutions until the project
+        becomes a reality. A member of 4K Labs is an asset to his colleagues
+        which will ignite peer-to-peer learning. 4K Labs has basic{" "}
+        <span className="text-orange-500"> three divisions</span> which are
       </p>
     </div>
   );
