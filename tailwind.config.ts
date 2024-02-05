@@ -1,5 +1,4 @@
-
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const withMT = require("@material-tailwind/react/utils/withMT");
 
@@ -12,31 +11,27 @@ const config: Config = withMT({
   theme: {
     extend: {
       colors: {
-        'primary': '#EBEBEB',
-        'secondary': '#F6F6F6',
-        'primaryColor': '#AA7f54',
-        'secondaryColor': '#D2D2D2',
-        footer: "#676767",
-        brown: "#8D5F3C",
+        primary: "#AA7F54",
+        "primary-bg": "#D2D2D2",
+        "secondary-bg": "#F6F6F6",
+        "txt-color": "#111111",
       },
       screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-        'custom-md': '900px', // Custom breakpoint
-        'custom-lg': '1200px', // Another custom breakpoint
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "custom-md": "900px", // Custom breakpoint
+        "custom-lg": "1200px", // Another custom breakpoint
         // Add more custom breakpoints as needed
-      }
+      },
     },
     fontFamily: {
-      custom: ["Roboto", "sans-serif"]
-    }
+      custom: ["Roboto", "sans-serif"],
+    },
   },
   plugins: [],
+});
 
-
-})
-
-export default config
+export default config;

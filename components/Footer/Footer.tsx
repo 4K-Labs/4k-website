@@ -1,4 +1,5 @@
 "use client";
+
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -13,11 +14,11 @@ import Link from "next/link";
 export default function Home() {
   const QuickLinks = [
     {
-      name: "about",
+      name: "About",
       Link: "/about",
     },
     {
-      name: "projects",
+      name: "Projects",
       Link: "/projects",
     },
     {
@@ -75,7 +76,7 @@ export default function Home() {
     }
   ];
   return (
-    <div className="bg-footer text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
+    <div className="bg-primary text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
       <div className="flex flex-col md:flex-row gap-10">
         <div className="flex flex-col text-white ">
           <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
@@ -90,8 +91,8 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
             {Contact?.map((address) => (
-              <div className="flex  m-2 gap-4">
-                <span className="m-2">{address.icon}</span>
+              <div className="flex flex-row m-2">
+                {address.icon}
                 <p className="whitespace-nowrap">{address.name}</p>
               </div>
             ))}
@@ -104,11 +105,11 @@ export default function Home() {
           <h1 className="text-xl font-semibold mb-4 whitespace-nowrap">
             Quick Links
           </h1>
-          <div className="flex flex-col hover:">
+          <div className="flex flex-col ">
             {QuickLinks.map((link) => (
               <a
                 href={link.Link}
-                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white"
+                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline  transition-transform duration-500 "
               >
                 {link.name}
               </a>
@@ -117,7 +118,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
-          <div className="flex gap-3 flex-row m-3 ">
+          <div className="flex gap-3 flex-row m-3 flex-wrap md:flex-nowrap">
             {SocialMedia.map((icon) => (
               <Link
                 className="bg-white shadow-lg text-blue-500 hover:scale-125   transition-transform duration-500  rounded-full md:p-1"

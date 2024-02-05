@@ -8,7 +8,7 @@ import Testimony from "../components/Testimony/Testimony";
 
 export default function Home() {
   return (
-    <div className="bg-primary font-custom tracking-wide">
+    <div className="bg-primary-bg font-custom tracking-wide">
       <Hero />
       <AboutUs />
       <ProjectCard id={""} />
