@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardData } from '../types/types';
+import { CardData } from '../app/types/types';
 import Image from 'next/image';
 
 

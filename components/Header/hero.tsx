@@ -1,7 +1,9 @@
 import React from 'react'
 import robot from '../../public/images/robot.png'
 import Image from 'next/image'
-import Button from './button'
+import Button from '../button'
+
+import Video from 'next/image'
 
 const Hero = () => {
   return (
@@ -14,7 +16,8 @@ const Hero = () => {
       <Button> EXPLORE OUR JOURNEY</Button>
       </div>
       <div>
-        <Image className = 'hidden md:block' src={robot} alt = "robot"/>
+        <Video className='hidden md:block' src={'/4krobot.MP4'} width={500} height={500} alt={''}/>
+        {/* <Image className = 'hidden md:block' src={robot} alt = "robot"/> */}
       </div>
 
     </div>

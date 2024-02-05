@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { useRouter } from "next/navigation";
 
-import { projectData, projectCard } from "../data/projectData";
+import { projectData, projectCard } from "../../app/data/projectData";
 import Image from "next/image";
 
 interface ProjectCardProps {

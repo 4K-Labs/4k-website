@@ -15,17 +15,17 @@ const cardData = [
 {
     title: 'Bots',
     image: 'bots.svg',
-    description: "Because it's about motivating the doers.",
+    description: " In this focus area members of 4K Labs work on projects such as; controlling robots for playing football, programming robots to complete autonomous tasks, and Autonomous cars.",
 },
 {
     title: 'Things',
     image: 'things.svg',
-    description: "Because it's about motivating the doers.",
+    description: "4K Things is a specialization of 4K Labs that focuses on embedded systems, IoT, and Tiny Machine Learning. Some of the projects done in this specialization are Smart mirrors, home automation, smart power meter and hardware-based games.  ",
 },
 {
     title: 'Dev',
     image: 'dev.svg',
-    description: "Because it's about motivating the doers.",
+    description: "The teams in 4K dev are the contact point when there is interest in bringing a hardware solution to the cloud. 4K Dev specialization was able to develop software and websites such as the 4K Labs website, class scheduling app, and agile working platform for the team.    ",
 },
 ];
 const AboutUs = ()=> {
@@ -41,12 +41,12 @@ const AboutUs = ()=> {
                     </div>
                     <div className="p-6 lg:w-1/2">
                         <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">Explore About 4k-Labs</h4>
-                        <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor 
-                    incididunt ut labore et dolore magna aliqua.</p>
+                        <p className="text-gray-600 mb-8">4K Labs is a Research and development laboratory at Addis Ababa University (AAU)
+                         located in the College of Natural and Computational Science(CNCS), under the Computer Science department. </p>
                         <ul className="list-disc text-gray-600 mb-8 ml-10">
-                            <li>4k-Bots: Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li>4k-Dev: Duis aute irure dolor in reprehenderit in voluptate.</li>
-                            <li>4k-Thing: Ulin reprehenderit in voluptate trideta storacalaperda.</li>
+                            <li><strong>4k-Bots</strong>: Is the division of 4K Labs, focusing on robotics and Artificial Intelligence. </li>
+                            <li><strong>4k-Dev</strong>: In this age of technology, embedded systems are everywhere in our daily life starting from smart watches to the smart cars we drive. </li>
+                            <li><strong>4k-Thing</strong>: 4K Dev is a specialization of 4K Labs that focuses on developing software solutions to existing problems that have been identified.</li>
                         </ul>
                         
                         <a href="/about" className="inline-block">
@@ -81,13 +81,13 @@ const AboutUs = ()=> {
                 <div key={index} className="py-2 w-64 md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0">
                         <CardBody>
-                        <div className="flex bg-brown-600  justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
-                            <Image src={data.image} className='brightness-90 shadow-md mb-4' alt={data.title} width={200} height={200} />
+                        <div className="flex justify-center rounded-full p-1 m-1 h-36 w-36 mx-auto">
+                            <Image src={data.image} className='mb-4 fill-black' alt={data.title} width={200} height={200} />
                         </div>
                         <Typography variant="h5" color="blue-gray" className="mb-2">
                             {data.title}
                         </Typography>
-                        <Typography>
+                        <Typography className="text-left">
                             {data.description}
                         </Typography>
                         </CardBody>

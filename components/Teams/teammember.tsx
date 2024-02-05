@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { TeamMember } from "../types/types";
+import { TeamMember } from "../../app/types/types";
 
 interface TeamMemberCardProps {
   memberData: TeamMember;

@@ -4,6 +4,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faTwitter, faFacebook, faLinkedin,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link'
+import Skeleton from 'react-loading-skeleton'
 
 const socialMediaLinks = [
     { icon: faTelegram, href: 'https://t.me/AI_4klabs4k',} ,
@@ -24,18 +25,16 @@ const ContactUs = ()=>{
                 <div className="p-6 rounded-lg">
                     <p className="text-4xl font-extrabold">contact us</p>
                     
-                    <form className="mt-8 space-y-4">
-                        <input type='text' placeholder='Full Name'
-                            className="w-full rounded-md py-3 px-4 text-sm " />
-                        <input type='email' placeholder='Email'
-                            className="w-full rounded-md py-3 px-4 text-sm" />
-                        <textarea placeholder='Message' rows={6}
-                            className="w-full rounded-md px-4 text-sm pt-3"></textarea>
-                        <button type='button'
+                    <form className="mt-8 space-y-4" action="https://formspree.io/f/xayrqznv" method="POST">
+                        <input type='text' name="name" placeholder='Full Name'
+                            className="w-full rounded-md py-3 px-4 text-sm " required/>
+                        <input type='email' name="email" placeholder='Email'
+                            className="w-full rounded-md py-3 px-4 text-sm" required/>
+                        <textarea name="message" placeholder='Message' rows={6}
+                            className="w-full rounded-md px-4 text-sm pt-3" required></textarea>
+                        <button type='submit'
                             className="text-white bg-black hover:bg-gray-900 font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
-                            onClick={()=>(
-                                location.reload()
-                            )}>
+                            >
                             Contact Us
                         </button>
                     </form>
@@ -70,7 +69,7 @@ const ContactUs = ()=>{
                         <li className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 368.16 368.16">
                                 <path d="M184.08 0c-74.992 0-136 61.008-136 136 0 24.688 11.072 51.24 11.536 52.36 3.576 8.488 10.632 21.672 15.72 29.4l93.248 141.288c3.816 5.792 9.464 9.112 15.496 9.112s11.68-3.32 15.496-9.104l93.256-141.296c5.096-7.728 12.144-20.912 15.72-29.4.464-1.112 11.528-27.664 11.528-52.36 0-74.992-61.008-136-136-136zM293.8 182.152c-3.192 7.608-9.76 19.872-14.328 26.8l-93.256 141.296c-1.84 2.792-2.424 2.792-4.264 0L88.696 208.952c-4.568-6.928-11.136-19.2-14.328-26.808-.136-.328-10.288-24.768-10.288-46.144 0-66.168 53.832-120 120-120s120 53.832 120 120c0 21.408-10.176 45.912-10.28 46.152z" data-original="#000000"></path>
-                                <path d="M184.08 64.008c-39.704 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path>
+                                <path d="M184.08 64.008c-39.7import React from 'react'04 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path>
                             </svg>
                             <Link href="javascript:void(0)" className="text-sm ml-3">
                                 4killo Addis Ababa University
@@ -94,6 +93,7 @@ const ContactUs = ()=>{
             {/* The map div */}
             {/* https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed */}
             <div className="z-10 relative h-full max-md:min-h-[350px]">
+                <Skeleton/> ||
                 <iframe src="https://maps.google.com/maps?q=4k Labs&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                     className="left-0 top-0 h-96 w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg b-0" 
                      allowFullScreen={true}></iframe>

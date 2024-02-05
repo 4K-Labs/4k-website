@@ -1,6 +1,6 @@
 "use client";
-import cardData from "../data/eventdata";
-import { CardData } from "../types/types";
+import cardData from "../../app/data/eventdata";
+import { CardData } from "../../app/types/types";
 import React from "react";
 
 import Image from "next/image";

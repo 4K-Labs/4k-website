@@ -1,18 +1,19 @@
-import Subscription from "@/app/components/subscribtion/Subscription";
-import AboutUs from "@/app/components/AboutUs";
-import Testimony from "@/app/components/Testimony";
-import Hero from "@/app/components/hero";
-import ProjectCard from "@/app/components/ProjectCard";
-import EventCard from'@/app/components/EventCard'
+import Subscription from "@/components/HomePage/Subscription";
+import AboutUs from "@/components/HomePage/AboutUs";
+import TestimonyDesktop from "@/components/Testimony/TestimonyDesktop";
+import Hero from "@/components/Header/hero";
+import ProjectCard from "@/components/Projects/ProjectCard";
+import EventCard from'@/components/HomePage/EventCard'
+import Testimony from "../components/Testimony/Testimony";
 
 export default function Home() {
   return (
     <div className="bg-primary font-custom tracking-wide">
       <Hero />
       <AboutUs />
-      <ProjectCard />
+      <ProjectCard id={""} />
       <EventCard />
-      <Testimony />
+      <TestimonyDesktop />
       <Subscription />
     </div>
   );

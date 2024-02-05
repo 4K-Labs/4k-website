@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+//import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer/Footer";
-const inter = Inter({ subsets: ["latin"] });
+import Header from "../components/Header/NavBar";
+import Footer from "../components/HomePage/Footer";
+//const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "4k labs",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />
