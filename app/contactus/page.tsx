@@ -33,7 +33,7 @@ const ContactUs = ()=>{
                         <textarea name="message" placeholder='Message' rows={6}
                             className="w-full rounded-md px-4 text-sm pt-3" required></textarea>
                         <button type='submit'
-                            className="text-white bg-black hover:bg-gray-900 font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
+                            className="text-white bg-primary hover:bg-primary font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
                             >
                             Contact Us
                         </button>
@@ -81,7 +81,7 @@ const ContactUs = ()=>{
                         {socialMediaLinks.map((socialMedia, index) => (
                             <li key={index} className={`h-10 w-10 rounded-full flex items-center justify-center shrink-0 ${socialMedia}`}>
                                 <Link href={socialMedia.href}>
-                                    <FontAwesomeIcon icon={socialMedia.icon} size='lg'/>
+                                    <FontAwesomeIcon icon={socialMedia.icon} size='2xl' color={ "#AA7F54" } />
                                 </Link>
                             </li>
                         ))}

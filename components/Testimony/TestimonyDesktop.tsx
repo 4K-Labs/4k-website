@@ -1,7 +1,6 @@
 'use client'
 
 import React, { Component } from "react";
-import testimonials from '@/app/data/testimonydata';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

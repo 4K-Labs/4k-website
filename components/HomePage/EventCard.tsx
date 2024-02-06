@@ -21,7 +21,7 @@ export default function EventCard() {
 
         <div
           className="flex flex-col  justify-center items-center
-          md:flex-row sm:flex-col m-auto "
+          md:flex-row sm:flex-col m-auto w-3/4"
         >
           {cardData.map((event: CardData, index: number) => {
             if (index < 3) {

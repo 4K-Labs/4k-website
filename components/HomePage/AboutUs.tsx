@@ -30,9 +30,9 @@ const cardData = [
 ];
 const AboutUs = ()=> {
     return (
-    <div className="flex flex-col items-center bg-gray-100">
+    <div className="flex flex-col items-center ">
 
-        <div className="text-left py-12">
+        <div className="text-left py-12 bg-gray-100">
             <h1 className="font-medium leading-10 text-4xl flex justify-center"> About Us </h1>
             <div className={`w-3/4 m-auto mt-10 border-gray-200 rounded-lg overflow-hidden`}>
                 <div className="flex flex-col  lg:flex-row-reverse">
@@ -50,7 +50,7 @@ const AboutUs = ()=> {
                         </ul>
                         
                         <a href="/about" className="inline-block">
-                            <button className="flex items-center gap-2 bg-transparent border border-grey-800 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-orange-500 hover:text-white">
+                            <button className="flex items-center gap-2 bg-transparent border border-grey-800 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-primary hover:text-white">
                             Learn More
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const AboutUs = ()=> {
         </div>
 
         {/* the three cards */}
-        <div className="flex flex-wrap p-2 md:w-2/3 justify-center">
+        <div className="flex flex-wrap p-2 justify-center w-3/4 bg-transparent">
             {cardData.map((data, index) => (
                 <div key={index} className="py-2 w-64 md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0">
@@ -93,7 +93,7 @@ const AboutUs = ()=> {
                         </CardBody>
                         <CardFooter className="pt-0">
                         <a href="/about" className="inline-block">
-                            <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-black hover:text-white">
+                            <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-primary hover:text-white">
                                 Learn More
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4" >
                                     <path
