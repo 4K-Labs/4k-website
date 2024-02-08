@@ -50,7 +50,7 @@ const NavBar = () => {
           ))}
           
         </ul>
-        <Button>Donate</Button>
+        <Button className=" font-bold">Subscribe</Button>
 
         
       </div>

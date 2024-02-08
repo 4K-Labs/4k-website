@@ -25,7 +25,7 @@ const Testimony = () => {
   };
 
   return (    
-    <div className="w-full sm:w-4/5 md:w-3/4 px-4 py mx-auto bg-transparent">
+    <div className="w-full sm:w-4/5 md:w-3/4 px-4 py-8 mx-auto bg-transparent">
       <Marquee className="p-2" speed={70} pauseOnHover={true} play={isPlaying}>
         
         {testimonials.map((testimony) => (
@@ -38,10 +38,10 @@ const Testimony = () => {
                 className="mx-0 flex items-center gap-4 pt-0 pb-8"
               >
                 <Avatar
-                  size="lg"
+                  size="xl"
                   variant="circular"
                   src={testimony.image}
-                  alt="tania andrew"
+                  alt="image"
                 />
                 <div className="flex w-full flex-col gap-0.5">
                   <div className="flex items-center justify-between">
