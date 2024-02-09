@@ -20,7 +20,7 @@ const NavBar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-primary-bg fixed top-0 left-0 w-full shadow-sm z-50">
+    <div className="bg-[#EBEBEB] fixed top-0 left-0 w-full shadow-sm z-50">
       <div className="w-3/4 mx-auto pt-5 flex  pr-9 md:pr-0 justify-between items-center font-sans ">
         <div className="cursor-pointer">
           <Image src={logo} width={80} height={60}  alt="logo"/>
@@ -34,7 +34,7 @@ const NavBar = () => {
         </div>
 
         <ul
-          className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:bg-primary lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-20 md:pl-28 rounded- xl   transition-all duration-500 ease-in ${
+          className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:bg-[#EBEBEB]  lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-20 md:pl-28 rounded- xl   transition-all duration-500 ease-in ${
             open ? "top-32 " : "top-[-490px]"
           }`}
         >
@@ -42,7 +42,7 @@ const NavBar = () => {
             <li key={link.name} className="md:ml-6 text-lg md:my-4 my-7">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-orange-400 duration-500"
+                className="text-gray-800 hover:text-primary duration-500"
               >
                 {link.name}
               </a>
@@ -50,7 +50,7 @@ const NavBar = () => {
           ))}
           
         </ul>
-        <Button>Donate</Button>
+        <Button className=" font-bold">Subscribe</Button>
 
         
       </div>

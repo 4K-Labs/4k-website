@@ -1,10 +1,12 @@
 'use client'
 
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faTwitter, faFacebook, faLinkedin,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link'
 import Skeleton from 'react-loading-skeleton'
+import { Button, Alert } from '@material-tailwind/react';
 
 const socialMediaLinks = [
     { icon: faTelegram, href: 'https://t.me/AI_4klabs4k',} ,
@@ -14,29 +16,87 @@ const socialMediaLinks = [
     { icon: faFacebook, href: 'https://www.facebook.com/4klabs4k/', }, 
     { icon: faWhatsapp, href: 'https://whatsapp.com/channel/0029VaC9pxn0bIdquIfWZU38',},
   ];
+ 
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        fillRule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
 
-const ContactUs = ()=>{
+const Result = ()=>{
     return (
-    <div className="py-36 bg-gray-100">
+    <Alert
+      icon={<Icon />}
+      className="rounded-none border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
+    >
+      Your message have been successfully submited. Thanks for reaching out.tus
+    </Alert>
+    )
+}
+ 
+const ContactUs = ()=>{
+    
+    const form: React.RefObject<HTMLFormElement> = useRef(null);
+    const [result, showResult] = useState(false);
+
+    const sendEmail = (e:any) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+                .sendForm('service_1f8lepj', 'template_365ecqb', form.current, {
+                    publicKey: 'QXToY77Rfsvi-RS3v',
+                })
+                .then(
+                    () => {
+                        showResult(true);
+                        // location.reload();
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+        } else {
+            console.error('Form element is undefined');
+        }
+    };
+
+    return (
+    <div className="py-36 bg-primary-bg">
         <div className="max-w-6xl mx-auto rounded-lg">
             <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
                 
                 {/* the div for the message section */}
                 <div className="p-6 rounded-lg">
                     <p className="text-4xl font-extrabold">contact us</p>
-                    
-                    <form className="mt-8 space-y-4" action="https://formspree.io/f/xayrqznv" method="POST">
-                        <input type='text' name="name" placeholder='Full Name'
-                            className="w-full rounded-md py-3 px-4 text-sm " required/>
-                        <input type='email' name="email" placeholder='Email'
-                            className="w-full rounded-md py-3 px-4 text-sm" required/>
+                    {/* action="https://formspree.io/f/xayrqznv" method="POST" */}
+                    <form className="mt-8 space-y-4" ref={form} onSubmit={sendEmail}>
+                        <input type='text' name="user_name" placeholder='Full Name'
+                            className="w-full rounded-md py-3 px-4 text-sm bg-secondary-bg" required/>
+                        <input type='email' name="user_email"  placeholder='Email'
+                            className="w-full rounded-md py-3 px-4 text-sm bg-secondary-bg" required/>
                         <textarea name="message" placeholder='Message' rows={6}
-                            className="w-full rounded-md px-4 text-sm pt-3" required></textarea>
-                        <button type='submit'
-                            className="text-white bg-black hover:bg-gray-900 font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
+                            className="w-full rounded-md px-4 text-sm pt-3 bg-secondary-bg" required></textarea>
+                        <div>
+                            {result ? <Result/> : null}
+                        </div>
+                        <Button type='submit' value="Send"
+                            className="text-white bg-primary hover:bg-primary font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
                             >
                             Contact Us
-                        </button>
+                        </Button>
+                        
                     </form>
                 </div>
 
@@ -62,7 +122,7 @@ const ContactUs = ()=>{
                                 <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" data-original="#000000"></path>
                             </svg>
                             <Link href="tel:+251 9090909" className="text-sm ml-3">
-                                +251 9090909
+                                +251 921307934
                             </Link>
                         </li>
                         <h1 className="text-lg font-bold">Based in</h1>
@@ -72,7 +132,7 @@ const ContactUs = ()=>{
                                 <path d="M184.08 64.008c-39.7import React from 'react'04 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path>
                             </svg>
                             <Link href="javascript:void(0)" className="text-sm ml-3">
-                                4killo Addis Ababa University
+                                AAU, CNCS Campus, 4 Kilo
                             </Link>
                         </li>
                     </ul>
@@ -81,7 +141,7 @@ const ContactUs = ()=>{
                         {socialMediaLinks.map((socialMedia, index) => (
                             <li key={index} className={`h-10 w-10 rounded-full flex items-center justify-center shrink-0 ${socialMedia}`}>
                                 <Link href={socialMedia.href}>
-                                    <FontAwesomeIcon icon={socialMedia.icon} size='lg'/>
+                                    <FontAwesomeIcon icon={socialMedia.icon} size='2xl' color={ "#AA7F54" } />
                                 </Link>
                             </li>
                         ))}

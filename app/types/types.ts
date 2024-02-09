@@ -28,9 +28,10 @@ export interface faqData {
 }
 
 export interface testimonyData {
-  id:number;
+  id?:number;
   name:string;
   image:string;
+  small_content?:string;
   content:string;
   title:string;
 }

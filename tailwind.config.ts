@@ -11,7 +11,7 @@ const config: Config = withMT({
   theme: {
     extend: {
       colors: {
-        primary: "#AA7F54",
+        "primary": "#AA7F54",
         "primary-bg": "#D2D2D2",
         "secondary-bg": "#F6F6F6",
         "txt-color": "#111111",
@@ -22,16 +22,14 @@ const config: Config = withMT({
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        "custom-md": "900px", // Custom breakpoint
-        "custom-lg": "1200px", // Another custom breakpoint
-        // Add more custom breakpoints as needed
+        "custom-md": "900px",
+        "custom-lg": "1200px", 
       },
     },
     fontFamily: {
       custom: ["Roboto", "sans-serif"],
     },
   },
-  plugins: [],
 });
 
 export default config;
