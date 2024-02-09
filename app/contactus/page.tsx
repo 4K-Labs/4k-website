@@ -40,7 +40,7 @@ const Result = ()=>{
       icon={<Icon />}
       className="rounded-none border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
     >
-      Your message have been successfully submited. Thanks for reaching out.m 
+      Your message have been successfully submited. Thanks for reaching out.tus
     </Alert>
     )
 }
@@ -55,12 +55,13 @@ const ContactUs = ()=>{
 
         if (form.current) {
             emailjs
-                .sendForm('service_gr9yhzs', 'template_6qaz07e', form.current, {
-                    publicKey: 'uzApAR5mQL7BdFf3S',
+                .sendForm('service_1f8lepj', 'template_365ecqb', form.current, {
+                    publicKey: 'QXToY77Rfsvi-RS3v',
                 })
                 .then(
                     () => {
                         showResult(true);
+                        // location.reload();
                     },
                     (error) => {
                         console.log('FAILED...', error.text);
