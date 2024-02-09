@@ -30,7 +30,7 @@ const Testimony = () => {
         
         {testimonials.map((testimony) => (
           <div key={testimony.id} className="m-4 ">
-            <Card  shadow={false} className="w-full w-[22rem] h-[17rem] px-4 bg-white">
+            <Card  shadow={false} className="w-full w-[22rem] h-[17rem] px-4 bg-secondary-bg">
               <CardHeader
                 color="transparent"
                 floated={false}

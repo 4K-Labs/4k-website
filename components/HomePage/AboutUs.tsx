@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import person from '@/public/images/people.avif'
+import lab from '@/public/images/4klabs.png'
 
 import {
     Card,
@@ -37,7 +37,7 @@ const AboutUs = ()=> {
             <div className={`w-3/4 m-auto mt-10 border-gray-200 rounded-lg overflow-hidden`}>
                 <div className="flex flex-col  lg:flex-row-reverse">
                     <div className="lg:w-1/2">
-                        <Image src={person} alt="card-image" className="h-full w-full object-cover" />
+                        <Image src={lab} alt="card-image" className="h-full w-full object-cover" />
                     </div>
                     <div className="p-6 lg:w-1/2">
                         <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">Explore About 4k-Labs</h4>

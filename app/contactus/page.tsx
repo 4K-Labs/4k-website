@@ -72,7 +72,7 @@ const ContactUs = ()=>{
     };
 
     return (
-    <div className="py-36 bg-gray-100">
+    <div className="py-36 bg-primary-bg">
         <div className="max-w-6xl mx-auto rounded-lg">
             <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
                 
@@ -82,11 +82,11 @@ const ContactUs = ()=>{
                     {/* action="https://formspree.io/f/xayrqznv" method="POST" */}
                     <form className="mt-8 space-y-4" ref={form} onSubmit={sendEmail}>
                         <input type='text' name="user_name" placeholder='Full Name'
-                            className="w-full rounded-md py-3 px-4 text-sm " required/>
+                            className="w-full rounded-md py-3 px-4 text-sm bg-secondary-bg" required/>
                         <input type='email' name="user_email"  placeholder='Email'
-                            className="w-full rounded-md py-3 px-4 text-sm" required/>
+                            className="w-full rounded-md py-3 px-4 text-sm bg-secondary-bg" required/>
                         <textarea name="message" placeholder='Message' rows={6}
-                            className="w-full rounded-md px-4 text-sm pt-3" required></textarea>
+                            className="w-full rounded-md px-4 text-sm pt-3 bg-secondary-bg" required></textarea>
                         <div>
                             {result ? <Result/> : null}
                         </div>
