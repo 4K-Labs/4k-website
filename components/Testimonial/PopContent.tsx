@@ -1,13 +1,5 @@
 'use client'
 
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-    Avatar,
-    CardFooter,
-  } from "@material-tailwind/react";
 import Image from 'next/image'
 import { testimonyData } from "@/app/types/types";
 
@@ -23,7 +15,7 @@ const PopContent:React.FC<testimonyData> = ({name, title, content, image})=>{
                     <p className="text-xl font-medium text-gray-900 dark:text-white">{content}</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                    <img className="w-6 h-6 rounded-full" src={image} alt="profile picture"></img>
+                    <Image className="w-6 h-6 rounded-full" src={image} alt="profile picture"></Image>
                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                         <div className="pr-3 font-medium text-gray-900 dark:text-white">{name}</div>
                         <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">{title}</div>

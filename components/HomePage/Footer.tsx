@@ -89,8 +89,8 @@ export default function Home() {
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
-            {Contact?.map((address) => (
-              <div className="flex  m-2 gap-4">
+            {Contact?.map((address, index) => (
+              <div className="flex  m-2 gap-4" key={index}>
                 <span className="m-2">{address.icon}</span>
                 <p className="whitespace-nowrap">{address.name}</p>
               </div>
@@ -105,8 +105,9 @@ export default function Home() {
             Quick Links
           </h1>
           <div className="flex flex-col hover:">
-            {QuickLinks.map((link) => (
+            {QuickLinks.map((link, index) => (
               <a
+                key={index}
                 href={link.Link}
                 className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white"
               >
@@ -118,8 +119,9 @@ export default function Home() {
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
-            {SocialMedia.map((icon) => (
+            {SocialMedia.map((icon, index) => (
               <Link
+                key={index}
                 className="bg-white shadow-lg text-blue-500 hover:scale-125   transition-transform duration-500  rounded-full md:p-1"
                 href={icon.address}
               >
