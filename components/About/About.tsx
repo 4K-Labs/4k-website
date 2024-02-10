@@ -1,3 +1,4 @@
+"use client"
 import WhoAreWe from "./WhoAreWe";
 import MissionIntro from "./MissionIntro";
 import AboutCard from "./About-card";

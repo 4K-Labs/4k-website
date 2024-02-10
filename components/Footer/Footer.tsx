@@ -22,12 +22,8 @@ export default function Home() {
       Link: "/projects",
     },
     {
-      name: "Trainings",
-      Link: "/trainings",
-    },
-    {
       name: "Team members",
-      Link: "/team",
+      Link: "/teams",
     },
     {
       name:"Events",
@@ -76,60 +72,57 @@ export default function Home() {
     }
   ];
   return (
-    <div className="bg-primary text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
-      <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex flex-col text-white ">
-          <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
-          <p className="inline-block px-2">
-            4K Labs is R & D laboratory in Addis Ababa University located in the
-            College of Natural and Computational Science(CNCS) under the
-            computer science department. Focusing in the area of AI, Robotics,
-            and embedded systems
-          </p>
-        </div>
-        <div className="flex flex-col text-white">
-          <h1 className="text-xl font-semibold mb-4">Contact</h1>
-          <div className="flex flex-col">
-            {Contact?.map((address) => (
-              <div className="flex flex-row m-2">
-                {address.icon}
-                <p className="whitespace-nowrap">{address.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+<footer className="bg-primary text-white-300 py-12 mt-8 ">
+  <div className="container mx-auto px-4 md:px-6 text-white">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="md:col-span-2">
+        <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
+        <p>
+          4K Labs is R & D laboratory in Addis Ababa University located in the
+          College of Natural and Computational Science(CNCS) under the
+          computer science department. Focusing in the area of AI, Robotics,
+          and embedded systems
+        </p>
       </div>
-
-      <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex flex-col text-white justify-start">
-          <h1 className="text-xl font-semibold mb-4 whitespace-nowrap">
-            Quick Links
-          </h1>
-          <div className="flex flex-col ">
-            {QuickLinks.map((link) => (
-              <a
-                href={link.Link}
-                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline  transition-transform duration-500 "
-              >
-                {link.name}
-              </a>
-            ))}
+      <div>
+        <h1 className="text-xl font-semibold mb-4">Quick Links</h1>
+        <nav className="space-y-2 flex flex-col">
+          {QuickLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.Link}
+              className="text-white hover:text-black whitespace-nowrap hover:underline transition-transform duration-500"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
+      <div>
+        <h1 className="text-xl font-semibold mb-4">Contact</h1>
+        {Contact?.map((address) => (
+          <div key={address.name} className="flex flex-row m-2">
+            {address.icon}
+            <p className="whitespace-nowrap">{address.name}</p>
           </div>
-        </div>
-        <div className="flex flex-col text-white">
-          <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
-          <div className="flex gap-3 flex-row m-3 flex-wrap md:flex-nowrap">
-            {SocialMedia.map((icon) => (
-              <Link
-                className="bg-white shadow-lg text-blue-500 hover:scale-125   transition-transform duration-500  rounded-full md:p-1"
-                href={icon.address}
-              >
-                {icon.icon}
-              </Link>
-            ))}
-          </div>
+        ))}
+      </div>
+      <div>
+        <h1 className="text-xl font-semibold mb-4">Follow Us</h1>
+        <div className="flex gap-3 m-3 flex-wrap">
+          {SocialMedia.map((icon) => (
+            <Link
+              key={icon.address}
+              className="hover:scale-125 shadow-lg transition-transform duration-500"
+              href={icon.address}
+            >
+              {icon.icon}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
+  </div>
+</footer>
   );
 }
