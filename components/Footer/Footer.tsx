@@ -72,7 +72,7 @@ export default function Home() {
     }
   ];
   return (
-<footer className="bg-primary text-white-300 py-12 mt-8 ">
+<footer className="bg-primary text-white-300 py-12">
   <div className="container mx-auto px-4 md:px-6 text-white">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
       <div className="md:col-span-2">

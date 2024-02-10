@@ -13,7 +13,7 @@ interface SectionWithImageProps {
 function SectionWithImage({ title, description, imageSrc, imageAlt, reverse }: SectionWithImageProps) {
   return (
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col bg-white  ${
         reverse
           ? " md:flex-row-reverse"
           : "flex-col md:flex-row"
