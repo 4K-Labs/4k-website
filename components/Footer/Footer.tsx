@@ -18,10 +18,6 @@ export default function Home() {
       Link: "/about",
     },
     {
-      name: "Projects",
-      Link: "/projects",
-    },
-    {
       name: "Team members",
       Link: "/teams",
     },
