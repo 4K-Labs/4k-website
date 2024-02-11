@@ -2,7 +2,7 @@
 export default function MissionText() {
   return (
     <div className="m-7">
-      <p className="mt-4  text-xl">
+      <p className="mt-4  text-xl text-justify">
         The motivation of the 4K Labs is to bring students from different
         disciplines together to create an interdisciplinary research environment
         in AAU. In the lab, a group of curious students come together to change

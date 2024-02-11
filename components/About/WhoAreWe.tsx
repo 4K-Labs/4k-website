@@ -12,7 +12,7 @@ export default function WhoAreWe() {
           Who we are
         </h1>
         <div>
-          <p className="md:text-lg">
+          <p className="md:text-lg text-justify">
             4K Labs is a Research and development laboratory at Addis Ababa
             University (AAU) located in the College of Natural and Computational
             Science(CNCS), under the Computer Science department. where there

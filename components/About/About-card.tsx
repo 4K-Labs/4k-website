@@ -31,12 +31,12 @@ const AboutCard: React.FC<AboutCardProps> = ({
     </div>
     <div className="mt-8 w-full lg:mt-0 lg:w-1/2 px-4  border-l-2 border-l-primary">
       <h3 className="mb-2 inline-block text-4xl font-bold  text-primary  font-heading">
-        <span className="border-b-4 border-primary dark:border-white text-gray-700 dark:text-white">
+        <span className="border-b-4 border-primary  text-gray-700 ">
           {blackTitle}
         </span>{" "}
         {orangeTitle}
       </h3>
-      <p className="mt-4 text-gray-600 text-lg">
+      <p className="mt-4 text-gray-800 text-lg text-justify">
         {description}
       </p>
     </div>

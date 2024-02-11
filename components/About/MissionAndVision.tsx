@@ -22,7 +22,7 @@ function SectionWithImage({ title, description, imageSrc, imageAlt, reverse }: S
       <div className="flex-1 md:p-12 z-10 rounded-e-3xl">
         <h1 className="text-lg mt-4 md:text-3xl mb-4 font-semibold"><span className="text-primary">4k</span>{" "+title}</h1>
         <div>
-          <p className="text-lg">{description}</p>
+          <p className="text-lg text-gray-800 text-justify">{description}</p>
         </div>
       </div>
       <div className="flex-1 rounded-2xl  -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
