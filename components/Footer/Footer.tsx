@@ -14,6 +14,10 @@ import Link from "next/link";
 export default function Home() {
   const QuickLinks = [
     {
+      name: "Home",
+      Link: "/",
+    },
+    {
       name: "About",
       Link: "/about",
     },
@@ -22,9 +26,13 @@ export default function Home() {
       Link: "/teams",
     },
     {
-      name:"Events",
-      Link:"/events"
-    }
+      name: "Events",
+      Link: "/events",
+    },
+    {
+      name: "FAQ",
+      Link: "/faqs",
+    },
   ];
 
   const Contact = [
@@ -64,61 +72,61 @@ export default function Home() {
     },
     {
       icon: <WhatsAppIcon />,
-      address:"https://www.whatsapp.com/4klabs"
-    }
+      address: "https://www.whatsapp.com/4klabs",
+    },
   ];
   return (
-<footer className="bg-primary text-white-300 py-12">
-  <div className="container mx-auto px-4 md:px-6 text-white">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-      <div className="lg:col-span-2">
-        <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
-        <p>
-          4K Labs is R & D laboratory in Addis Ababa University located in the
-          College of Natural and Computational Science(CNCS) under the
-          computer science department. Focusing in the area of AI, Robotics,
-          and embedded systems
-        </p>
-      </div>
-      <div>
-        <h1 className="text-xl font-semibold mb-4">Quick Links</h1>
-        <nav className="space-y-2 flex flex-col">
-          {QuickLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.Link}
-              className="text-white hover:text-black whitespace-nowrap hover:underline transition-transform duration-500"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-      </div>
-      <div>
-        <h1 className="text-xl font-semibold mb-4">Contact</h1>
-        {Contact?.map((address) => (
-          <div key={address.name} className="flex flex-row m-2">
-            {address.icon}
-            <p className="whitespace-nowrap">{address.name}</p>
+    <footer className="bg-primary text-white-300 py-12">
+      <div className="container mx-auto px-4 md:px-6 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="lg:col-span-2">
+            <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
+            <p>
+              4K Labs is R & D laboratory in Addis Ababa University located in
+              the College of Natural and Computational Science(CNCS) under the
+              computer science department. Focusing in the area of AI, Robotics,
+              and embedded systems
+            </p>
           </div>
-        ))}
-      </div>
-      <div>
-        <h1 className="text-xl font-semibold mb-4">Follow Us</h1>
-        <div className="flex gap-3 m-3 flex-wrap">
-          {SocialMedia.map((icon) => (
-            <Link
-              key={icon.address}
-              className="hover:scale-125 shadow-lg transition-transform duration-500"
-              href={icon.address}
-            >
-              {icon.icon}
-            </Link>
-          ))}
+          <div>
+            <h1 className="text-xl font-semibold mb-4">Quick Links</h1>
+            <nav className="space-y-2 flex flex-col">
+              {QuickLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.Link}
+                  className="text-white hover:font-semibold whitespace-nowrap hover:underline transition-transform duration-500 transform hover:scale-110"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+          <div>
+            <h1 className="text-xl font-semibold mb-4">Contact</h1>
+            {Contact?.map((address) => (
+              <div key={address.name} className="flex flex-row m-2">
+                {address.icon}
+                <p className="whitespace-nowrap">{address.name}</p>
+              </div>
+            ))}
+          </div>
+          <div>
+            <h1 className="text-xl font-semibold mb-4">Follow Us</h1>
+            <div className="flex gap-3 m-3 flex-wrap">
+              {SocialMedia.map((icon) => (
+                <Link
+                  key={icon.address}
+                  className="hover:scale-125 shadow-lg transition-transform duration-500"
+                  href={icon.address}
+                >
+                  {icon.icon}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
   );
 }

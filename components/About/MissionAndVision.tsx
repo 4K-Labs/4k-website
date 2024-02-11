@@ -8,21 +8,26 @@ interface SectionWithImageProps {
   imageSrc: string;
   imageAlt: string;
   reverse?: boolean;
+  id?: string;
 }
 
-function SectionWithImage({ title, description, imageSrc, imageAlt, reverse }: SectionWithImageProps) {
+function SectionWithImage({id, title, description, imageSrc, imageAlt, reverse }: SectionWithImageProps) {
   return (
     <div
       className={`flex flex-col-reverse bg-gray-200 rounded-lg shadow-md  ${
-        reverse
-          ? " lg:flex-row-reverse"
-          : "lg:flex-row"
+        reverse ? " lg:flex-row-reverse" : "lg:flex-row"
       }  md:px-12 p-3 items-center`}
     >
       <div className="flex-1 md:p-12 z-10 rounded-e-3xl">
-        <h1 className="text-lg mt-4 md:text-3xl mb-4 font-semibold"><span className="text-primary">4k</span>{" "+title}</h1>
+        <h1 className="text-lg mt-4 md:text-3xl mb-4 font-semibold">
+          <span className="text-primary">4k</span>
+          {" " + title}
+        </h1>
         <div>
-          <p className="text-lg text-gray-800 text-justify">{description}</p>
+          <p className="text-lg text-gray-800 text-justify">
+            {description}
+            <span id={id}></span>
+          </p>
         </div>
       </div>
       <div className="flex-1 rounded-2xl  -ml-1 transform transition duration-500 ease-in-out hover:scale-110 hover:z-20">
@@ -43,18 +48,20 @@ function SectionWithImage({ title, description, imageSrc, imageAlt, reverse }: S
 export default function Mission() {
 
     return (
-      <div className="flex flex-col gap-6 w-4/5 mx-auto">
+      <div className="flex flex-col gap-6 w-4/5 mx-auto " >
         <SectionWithImage
           title="Bots"
           description="Is the division of 4K Labs, focusing on robotics and Artificial Intelligence. In this focus area members of 4K Labs work on projects such as; controlling robots for playing football, programming robots to complete autonomous tasks, and Autonomous cars."
           imageSrc="/images/4klabs.png"
           imageAlt="4klabs"
+          id="Things"
         />
         <SectionWithImage
           title="Things"
           description="In this age of technology, embedded systems are everywhere in our daily life starting from smart watches to the smart cars we drive. 4K Labs is interested in researching and developing solutions to existing problems that seek hardware solutions. 4K Things is a specialization of 4K Labs that focuses on embedded systems, IoT, and Tiny Machine Learning. Some of the projects done in this specialization are Smart mirrors, home automation, smart power meter and hardware-based games."
           imageSrc="/images/4klabs.png"
           imageAlt="4klabs"
+          id="Dev"
           reverse
         />
 

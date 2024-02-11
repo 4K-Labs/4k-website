@@ -93,7 +93,7 @@ const AboutUs = ()=> {
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
-                            <a href="/about" className="inline-block">
+                            <a href={"/about"+"#"+data.title} className="inline-block">
                                 <Button size="sm" variant="text" className="flex items-center gap-2 border border-grey-900 text-grey-500 font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-primary hover:text-white">
                                     Learn More
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4" >
