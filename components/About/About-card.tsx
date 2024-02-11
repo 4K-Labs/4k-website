@@ -18,7 +18,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
   row,
 }) => (
   <div
-    className={`mt-8 flex flex-wrap items-center justify-between ${row}`}
+    className={`mt-8 bg-gray-200 rounded-md flex flex-wrap items-center justify-between ${row}`}
   >
     <div className="flex w-full items-center justify-around lg:w-1/2">
       <Image
