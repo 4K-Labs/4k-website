@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../public/images/4klogo.png";
+import logo from "../../public/images/4klogo.jpg";
 import Image from "next/image";
 import Button from "../button";
 
@@ -34,7 +34,7 @@ const NavBar = () => {
         </div>
 
         <ul
-          className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:bg-[#EBEBEB]  lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-20 md:pl-28 rounded- xl   transition-all duration-500 ease-in ${
+          className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:bg-primary-bg lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-20 md:pl-28 rounded- xl   transition-all duration-500 ease-in ${
             open ? "top-32 " : "top-[-490px]"
           }`}
         >

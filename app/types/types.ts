@@ -6,6 +6,7 @@ export interface TeamMember {
   position: string;
   description: string;
   image: StaticImageData;
+  type: string;
   socialLinks: SocialLink[];
 }
 
@@ -19,7 +20,7 @@ export interface CardData {
   category: string;
   title: string;
   content: string;
-  imageUrl: StaticImageData;
+  imageUrl: StaticImageData[];
 }
 
 export interface faqData {
