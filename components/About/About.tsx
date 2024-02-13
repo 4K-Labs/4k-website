@@ -10,7 +10,7 @@ export default function about() {
       <div className="mt-44 w-4/5 mx-auto">
         <WhoAreWe />
         <MissionIntro />
-        <div className="lg:w-4/5 mx-auto">
+        <div className="md:w-4/5 mx-auto">
         <AboutCard
           imageSrc1="/images/mission.jpg"
           imageSrc2="/images/mission2.jpg"
