@@ -9,27 +9,29 @@ interface TeamMemberCardProps {
   memberData: TeamMember;
 }
 
+
+
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ memberData }) => {
   const { name, position, description, image, socialLinks } = memberData;
 
   return (
     <div className="card w-60 rounded-lg bg-white-500  max-w-xs   border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform hover:scale-105">
-      <div className="flex flex-col  items-start pb-10">
+      <div className="flex flex-col items-start pb-10">
         <Image
           src={image}
           width={150}
           height={150}
-          className="w-full  h-48 mb-3 mt-4 border-b-2 p-2 rounded-lg overflow-hidden"
+          className="w-full h-48 mb-3 mt-4 border-b-2 p-2 rounded-3xl"
           alt={`${name} image`}
         />
         <h5 className="mb-1 pl-5 text-xl font-medium text-gray-900 dark:text-white">
           {name}
         </h5>
-        <span className="text-sm pl-5 text-gray-500 dark:text-gray-400">
+        <h6 className=" pl-5 text-base text-start text-gray-800 dark:text-gray-400">
           {position}
-        </span>
-        <div className = "h-40 text-start p-5 pt-3 overflow-y-scroll">
-        <span className="text-sm    text-start text-gray-500 dark:text-gray-400">
+        </h6>
+        <div className = "h-40 text-start p-5 pt-3 scrollbar">
+        <span className="text-sm text-start text-gray-500 dark:text-gray-400">
           {description}
         </span>
         </div>

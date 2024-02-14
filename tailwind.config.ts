@@ -12,7 +12,7 @@ const config: Config = withMT({
     extend: {
       colors: {
         "primary": "#AA7F54",
-        "primary-bg": "#D2D2D2",
+        "primary-bg": "#FFFFFF",
         "secondary-bg": "#F6F6F6",
         "txt-color": "#111111",
       },
