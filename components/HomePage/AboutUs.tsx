@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import { Carousel, IconButton } from "@material-tailwind/react";
 import members from '@/public/images/Members.jpg'
@@ -34,9 +35,9 @@ const cardData = [
 ];
 const AboutUs = ()=> {
     return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center">
 
-        <div className="text-left py-12 bg-gray-100">
+        <div className="text-left py-6 bg-gray-100">
             <div className={`w-3/4 m-auto mt-10 border-gray-200 overflow-hidden`}>
                 <div className="flex flex-col  lg:flex-row-reverse">
                 <div className="flex w-full h-[400px] lg:h-[430px]  items-center justify-around lg:w-1/2">
@@ -122,14 +123,13 @@ const AboutUs = ()=> {
                 </div>
                 </Carousel>
                 </div>
-                <div className="p-6 lg:w-1/2">
-                    <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">Explore About 4k-Labs</h4>
+                <div className="p-6 lg:w-1/2 ">
                     <p className="text-gray-600 mb-8">4K Labs is a Research and development laboratory at Addis Ababa University (AAU)
                         located in the College of Natural and Computational Science(CNCS), under the Computer Science department. </p>
                     <ul className="list-disc text-gray-600 mb-8 ml-6">
                         <li><strong>4k-Bots</strong>: Is the division of 4K Labs, focusing on robotics and Artificial Intelligence. </li>
-                        <li><strong>4k-Dev</strong>: In this age of technology, embedded systems are everywhere in our daily life starting from smart watches to the smart cars we drive. </li>
-                        <li><strong>4k-Thing</strong>: 4K Dev is a specialization of 4K Labs that focuses on developing software solutions to existing problems that have been identified.</li>
+                        <li><strong>4k-Thing</strong>: In this age of technology, embedded systems are everywhere in our daily life starting from smart watches to the smart cars we drive. </li>
+                        <li><strong>4k-Dev</strong>: 4K Dev is a specialization of 4K Labs that focuses on developing software solutions to existing problems that have been identified.</li>
                     </ul>
                     
                     <a href="/about" className="inline-block">
