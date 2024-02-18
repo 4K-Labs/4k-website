@@ -27,7 +27,10 @@ export default function EventCard() {
           {cardData.map((event: CardData, index: number) => {
             if (index < 3) {
               return (
-                <div key={index} className="m-auto lg:max-w-[500px] sm:w-full  ">
+                <div
+                  key={index}
+                  className="m-auto lg:max-w-[500px] sm:w-full  "
+                >
                   <Card>
                     <CardHeader color="blue-gray" className="h-56 ">
                       <Image
