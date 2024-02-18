@@ -60,7 +60,7 @@ export default function EventCard() {
                       </Typography>
                     </CardBody>
                     <CardFooter className="pt-0 ">
-                      <Link href={`/events/#${event.title}`} scroll={true}>
+                      <Link href={`/events/`} scroll={true}>
                         <Button variant="filled" className="bg-primary">
                           View more
                         </Button>
