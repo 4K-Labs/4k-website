@@ -37,7 +37,7 @@ const Teams = () => {
   );
   const alumniMembers = currentMembers.filter((member) => member.type === "alumni");
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
     setCurrentPage(1); // Reset pagination when search query changes
   };
@@ -49,7 +49,7 @@ const Teams = () => {
         <h1 className="font-medium leading-10 text-4xl font-custom">
           OUR TEAM
         </h1>
-        <p className="text-gray-500 pt-5 text-center m-auto">
+        <p className="text-gray-500 px-5 pt-5 text-justify m-auto">
         The team of 4K Labs are from a wide variety of disciplines and talent, with the aim to create an Interdisciplinary research environment. These have helped us complete projects in a defined manner. Our team is a combination of Electrical engineers, software engineers, Mechanical engineers, Artists, Graphics designers, video editors, social media enthusiasts and product designers. 4K Labs-team members are really humble and fun. 
         </p>
 
@@ -88,12 +88,7 @@ const Teams = () => {
                 onChange={handleSearchChange}
                 required
               />
-              {/* <button
-                type="submit"
-                className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Search
-              </button> */}
+              
             </div>
           </form>
         </div>

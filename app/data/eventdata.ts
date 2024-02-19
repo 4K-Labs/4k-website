@@ -13,6 +13,8 @@ import remotesensing2 from '../../public/images/event/t1.jpg'
 import automatic from '../../public/images/event/2.jpg'
 import automatic2 from '../../public/images/event/3.jpg'
 import automatic3 from '../../public/images/event/san.jpg'
+import opendoor from '../../public/images/event/opendoor.png'
+import adwa from '../../public/images/event/hackaton.jpg'
 import { autocompleteClasses } from '@mui/material';
 const cardData: CardData[] = [
   {
@@ -27,7 +29,7 @@ const cardData: CardData[] = [
     title: 'Open house',
     content:
       '4K Labs opens its door for the public to come and visit the lab. Taking the advantage of this event students, teachers, and industry professionals come together to network and discuss technology. Networking has a key value for R&D, as it will help us discover new territories of opportunity and skills. ',
-    imageUrl: []
+    imageUrl: [opendoor]
   },
   {
     category: 'startups',
@@ -41,7 +43,7 @@ const cardData: CardData[] = [
     title: 'Adwa Hackathon',
     content:
       'This hackathon was dedicated to Alpha1s robot. The challenge was to find ways to control the signals in Alpha1s in a defined manner and develop functionalities. It was given the name “ADWA Hackathon due to the fact that the event was the same exact day of the Ethiopian ADWA celebration. Members of 4K Labs as well students that were interested participated in the hackathon. The achievements from the hackathon were promising.',
-    imageUrl: []
+    imageUrl: [adwa]
   },
   {
     category: 'startups',

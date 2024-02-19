@@ -38,7 +38,7 @@ const HorizontalCard: React.FC<HorizontalCardProps> = ({ eventData, index }) => 
         <div className="p-6 lg:w-1/2 pt-10 text-start">
           {/* <h6 className="text-gray-500 mb-4 uppercase">{category}</h6> */}
           <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">{title}</h4>
-          <p className="text-gray-600 pt-3 mb-8">{content}</p>
+          <p className="text-gray-600 text-justify pr-5 pt-3 mb-8">{content}</p>
           <a href="#" className="inline-block">
             
           </a>

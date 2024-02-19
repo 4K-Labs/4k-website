@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { TeamMember } from "../../app/types/types";
 
 interface TeamMemberCardProps {
@@ -31,7 +31,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ memberData }) => {
           {position}
         </h6>
         <div className = "h-40 text-start p-5 pt-3 scrollbar">
-        <span className="text-sm text-start text-gray-500 dark:text-gray-400">
+        <span className="text-sm text-justify text-gray-500 dark:text-gray-400">
           {description}
         </span>
         </div>
