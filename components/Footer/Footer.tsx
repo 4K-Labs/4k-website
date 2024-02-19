@@ -78,19 +78,19 @@ export default function Home() {
   return (
     <footer className="bg-primary text-white-300 py-12">
       <div className="container mx-auto px-4 md:px-6 text-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2.4fr,1fr,1.4fr,1.4fr] gap-6 ">
+          <div className="">
             <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
-            <p>
+            <p className="pl-4 text-justify">
               4K Labs is R & D laboratory in Addis Ababa University located in
               the College of Natural and Computational Science(CNCS) under the
               computer science department. Focusing in the area of AI, Robotics,
               and embedded systems
             </p>
           </div>
-          <div>
+          <div className="lg:ml-4">
             <h1 className="text-xl font-semibold mb-4">Quick Links</h1>
-            <nav className="space-y-2 flex flex-col">
+            <nav className="space-y-2 flex flex-col pl-4">
               {QuickLinks.map((link) => (
                 <Link
                   key={link.name}
