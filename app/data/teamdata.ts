@@ -4,8 +4,9 @@ import {
   faLinkedin
   
 } from "@fortawesome/free-brands-svg-icons";
+import ibrahim from "../../public/images/teams/ibrahim.jpg"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import people from '../../public/images/4klogo.png'
+
 import akililu from '../../public/images/teams/akililu.jpg'
 import hopealemayehu from '../../public/images/teams/hopealemayehu.jpg'
 import meiraf from '../../public/images/teams/mieraf.jpg'
@@ -44,7 +45,7 @@ export const teamData: TeamMember[] = [
     image: kirusentayehu,
     type: "alumni",
     socialLinks: [
-      { url: "kirubel.s.tadesse@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:kirubel.s.tadesse@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/kirubel-sentayehu-2ab782170/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -56,7 +57,7 @@ export const teamData: TeamMember[] = [
     image: robera,
     type: "alumni",
     socialLinks: [
-      { url: "roberaworknehrobwork@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:roberaworknehrobwork@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/roberawork/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -68,7 +69,7 @@ export const teamData: TeamMember[] = [
     image: dagmawi,
     type: "alumni",
     socialLinks: [
-      { url: "dagmawimuluwork@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:dagmawimuluwork@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
      
       { url: "https://www.linkedin.com/in/dagmawi-muluwork-55a764227", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -82,7 +83,7 @@ export const teamData: TeamMember[] = [
     image: hopealemayehu,
     type: "member",
     socialLinks: [
-      { url: "hopesp444@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:hopesp444@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/hope-alemayehu-4ba3b0190/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -95,7 +96,7 @@ export const teamData: TeamMember[] = [
     image: emran,
     type: "member",
     socialLinks: [
-      { url: "emran.kamil@aait.edu.et", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:emran.kamil@aait.edu.et", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
      
       { url: "https://www.linkedin.com/in/emran-husen", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -107,7 +108,7 @@ export const teamData: TeamMember[] = [
     image: akililu,
     type: "member",
     socialLinks: [
-      { url: "akliluzenebe014@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:akliluzenebe014@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/aklilu-zenebe-40b28b20b/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -119,7 +120,7 @@ export const teamData: TeamMember[] = [
     image: lidya,
     type: "member",
     socialLinks: [
-      { url: "Mailto:liduadmasu@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:liduadmasu@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://et.linkedin.com/in/people-admasu-8b3048299", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -131,7 +132,7 @@ export const teamData: TeamMember[] = [
     image: surafelwond,
     type: "member",
     socialLinks: [
-      { url: "Surafelwendnagegn457@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:Surafelwendnagegn457@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/surafel-wondmagegn-23a88026a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -144,9 +145,9 @@ export const teamData: TeamMember[] = [
     image: tamiru,
     type: "member",
     socialLinks: [
-      { url: "tamirualemnew33@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:tamirualemnew33@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
-      { url: "mhttps://www.linkedin.com/in/tamiru-alemnew/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "https://www.linkedin.com/in/tamiru-alemnew/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
   },
   {
@@ -156,7 +157,7 @@ export const teamData: TeamMember[] = [
     image: hayat,
     type: "member",
     socialLinks: [
-      { url: "hayatalia21@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:hayatalia21@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BCcoYzIo0R0OGS70rP1QXDQ%3D%3D", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -168,7 +169,7 @@ export const teamData: TeamMember[] = [
     image: kidusweg,
     type: "member",
     socialLinks: [
-      { url: "kidusweg@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:kidusweg@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/kidus-wegayehu-5271a727b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6zxU3DsVTkGntZldOnLC0w%3D%3D", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -183,7 +184,7 @@ export const teamData: TeamMember[] = [
     image: surafelsentayehu,
     type: "alumni",
     socialLinks: [
-      { url: "surafelsentayehu58@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:surafelsentayehu58@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/surafel-sentayehu-590764227/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -195,7 +196,7 @@ export const teamData: TeamMember[] = [
     image: sisay,
     type: "alumni",
     socialLinks: [
-      { url: "tgsisayk@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:tgsisayk@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/sisay-mitiku-80975413b", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -207,7 +208,7 @@ export const teamData: TeamMember[] = [
     image: abenezer,
     type: "alumni",
     socialLinks: [
-      { url: "abeni5049@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:abeni5049@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
       { url: "https://www.linkedin.com/in/abenezer-kebede/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
@@ -219,20 +220,19 @@ export const teamData: TeamMember[] = [
     image: nati,
     type: "alumni",
     socialLinks: [
-      { url: "nminyel@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:nminyel@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     
       { url: "Https://linkedin.com/in/natminyel", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
   },
   {
     name: "Mieraf",
-    position: "Graphic Designer",
-    description: "I am a 4K Labs member. I worked as a full stack developer\
-    My name is Robera Workneh. Currently,  I am working as a full-stack developer at a software company. During my membership in  4K Labs, I worked as a full-stack developer. I participated in creating a smart mirror that displays important events and information about the lab. I also took part in making a website for scheduling university classes.",
+    position: "UI/UX Designer",
+    description: "I am an active member of 4k labs currently working as a UI/UX designer",
     image: meiraf,
     type: "member",
     socialLinks: [
-      { url: "emma-facebook-url", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-gray-400" },
+      { url: "mailto:mierafyyg@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-gray-400" },
       
       { url: "https://www.linkedin.com/in/roberawork/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-gray-600" },
     ],
@@ -240,13 +240,25 @@ export const teamData: TeamMember[] = [
   {
     name: "Zelalem Yetsedaw",
     position: "Full stack developer",
-    description: "",
+    description: "a full stack developer who uses React, Next.js, and Tailwind CSS for frontend development, and .NET for the backend.",
     image: zelalem,
     type: "member",
     socialLinks: [
-      { url: "emma-facebook-url", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "mailto:zy94988@gmail.com", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
       
-      { url: "https://www.linkedin.com/in/roberawork/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      { url: "https://www.linkedin.com/in/zelalem-yetsedaw-4510a6259/", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+    ],
+  },
+  {
+    name: "Ibrahim Hassen",
+    position: "Full stack developer",
+    description: "I am an active member of 4k labs working as a web developer.",
+    image: ibrahim,
+    type: "member",
+    socialLinks: [
+      { url: "mailto:@amudiworks@gmail.com ", icon: faEnvelope, iconClass: "w-6 h-6 text-primary dark:text-primary" },
+      
+      { url: "https://www.linkedin.com/in/ibrahim-hassen", icon: faLinkedin, iconClass: "w-6 h-6 text-primary dark:text-primary" },
     ],
   }
 ];

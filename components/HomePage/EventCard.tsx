@@ -12,28 +12,31 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 export default function EventCard() {
   return (
-    <>
-      <div className=" bg-gray-100">
-        <Typography className=" text-center p-8 text-2xl">Events</Typography>
+    <div className = "bg-gray-100">
+      <div className="  w-3/4 m-auto  py-20">
+        <Typography className=" text-center p-16 text-4xl">Events</Typography>
 
         <div
-          className="flex flex-col  justify-center items-center
-          md:flex-row sm:flex-col m-auto w-3/4"
+          className="flex flex-col
+          md:flex-row   gap-8 pb-5 m-2"
         >
           {cardData.map((event: CardData, index: number) => {
             if (index < 3) {
               return (
-                <div key={index} className="p-5 sm:m-auto">
+                <div
+                  key={index}
+                  className="m-auto lg:max-w-[500px] sm:w-full  "
+                >
                   <Card>
-                    <CardHeader color="blue-gray" className="h-56">
+                    <CardHeader color="blue-gray" className="h-56 ">
                       <Image
-                        src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                        src={event.imageUrl[0]}
                         alt="card-image"
-                        width={500}
-                        height={500}
+                        fill={true}
                       />
                     </CardHeader>
                     <Typography
@@ -47,7 +50,7 @@ export default function EventCard() {
                     <CardBody>
                       <Typography
                         style={{
-                          WebkitLineClamp: 2,
+                          WebkitLineClamp: 3,
                           WebkitBoxOrient: "vertical",
                           overflow: "hidden",
                           display: "-webkit-box",
@@ -57,7 +60,11 @@ export default function EventCard() {
                       </Typography>
                     </CardBody>
                     <CardFooter className="pt-0 ">
-                      <Button variant="filled">View more</Button>
+                      <Link href={`/events/#${event.title}`} scroll={true}>
+                        <Button variant="filled" className="bg-primary">
+                          View more
+                        </Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 </div>
@@ -66,6 +73,6 @@ export default function EventCard() {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
