@@ -50,7 +50,7 @@ const FAQs = () => {
             </div>
 
             {/* Right Div - FAQs */}
-            <div className="md:w-1/2 max-w-2xl mx-auto mt-8 p-12 md:order-2">
+            <div className="w-full md:w-1/2 max-w-2xl mx-auto mt-8 p-2 md:p-12 md:order-2">
                 <div>
                     {faqs.map((faq, idx) => (
                         <div key={idx} className="border-b border-orange-400 m-8 min-w-lg">

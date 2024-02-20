@@ -35,10 +35,10 @@ const cardData = [
 ];
 const AboutUs = ()=> {
     return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full md:w-3/4">
 
         <div className="text-left py-6 bg-gray-100">
-            <div className={`w-3/4 m-auto mt-10 border-gray-200 overflow-hidden`}>
+            <div className={`m-auto mt-10 border-gray-200 overflow-hidden`}>
                 <div className="flex flex-col  lg:flex-row-reverse">
                 <div className="flex w-full h-[400px] lg:h-[430px]  items-center justify-around lg:w-1/2">
                 <Carousel
@@ -159,7 +159,7 @@ const AboutUs = ()=> {
         </div>
 
         {/* the three cards */}
-        <div className="flex flex-wrap justify-center w-3/4 bg-transparent">
+        <div className="flex flex-wrap justify-center bg-transparent">
             {cardData.map((data, index) => (
                 <div key={index} className="py-2 w-full md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0 ">

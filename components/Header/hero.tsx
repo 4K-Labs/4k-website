@@ -7,7 +7,7 @@ import Video from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-3/4 pl-16 py-60 m-auto flex justify-around  items-center self-center">
+    <div className="w-full md:w-3/4 pl-16 py-60 m-auto flex justify-around  items-center self-center">
       <div className="flex-col justify-start self-center">
         <div className="font-medium leading-10 text-3xl md:text-4xl pr-10">
         Welcome to 4K Labs - <br /> A place where curiosity <br/> drives  innovation 
