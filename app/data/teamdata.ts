@@ -28,27 +28,6 @@ import lidetu from '../../public/images/teams/lidetu.jpg'
 
 export const teamData: TeamMember[] = [
   {
-    name: "Lidetu Tadesse Kuma",
-    position: "4K Labs Manager",
-    description:
-      "I am an electrical and computer engineer. With a passion for innovation. I have developed strong skills in Fab Lab and tech space management. However my true passion lies in embedded ML and digital fabrication where I constantly seek ways to incorporate this cutting-edge technology into my work. ",
-    image: lidetu,
-    type: "member",
-    socialLinks: [
-      {
-        url: "mailto:lidetu.tadesse@aau.edu.et",
-        icon: faEnvelope,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-
-      {
-        url: "https://www.linkedin.com/in/lidetu-tadesse/ ",
-        icon: faLinkedin,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-    ],
-  },
-  {
     name: "Kirubel Sentayehu",
     position: "Software engineer",
     description:
@@ -64,6 +43,28 @@ export const teamData: TeamMember[] = [
 
       {
         url: "https://www.linkedin.com/in/kirubel-sentayehu-2ab782170/",
+        icon: faLinkedin,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+    ],
+  },
+  {
+    name: "Surafel Sentayehu",
+    position: "Software engineer",
+    description:
+      "I am a 4K Labs alumni. I worked as a software engineer\
+    My name is Surafel Sentayehu Tadesse and I am a software engineer who enjoys programming and problem-solving. I hold a B.Sc. degree in Computer Science from Addis Ababa University. I have gained experience in web development, machine learning, and autonomous vehicle development through my internships and projects. I was a Software developer and ML engineer intern at 4k Labs. There, I was involved in an autonomous car project where I worked on lane detection algorithm using Python and OpenCV. I also assisted in a python programming training organized by Orange Digital Center Ethiopia and 4K Labs.",
+    image: surafelsentayehu,
+    type: "alumni",
+    socialLinks: [
+      {
+        url: "mailto:surafelsentayehu58@gmail.com",
+        icon: faEnvelope,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+
+      {
+        url: "https://www.linkedin.com/in/surafel-sentayehu-590764227/",
         icon: faLinkedin,
         iconClass: "w-6 h-6 text-primary dark:text-primary",
       },
@@ -106,6 +107,27 @@ export const teamData: TeamMember[] = [
 
       {
         url: "https://www.linkedin.com/in/dagmawi-muluwork-55a764227",
+        icon: faLinkedin,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+    ],
+  },
+  {
+    name: "Lidetu Tadesse Kuma",
+    position: "4K Labs Manager",
+    description:
+      "I am an electrical and computer engineer. With a passion for innovation. I have developed strong skills in Fab Lab and tech space management. However my true passion lies in embedded ML and digital fabrication where I constantly seek ways to incorporate this cutting-edge technology into my work. ",
+    image: lidetu,
+    type: "member",
+    socialLinks: [
+      {
+        url: "mailto:lidetu.tadesse@aau.edu.et",
+        icon: faEnvelope,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+
+      {
+        url: "https://www.linkedin.com/in/lidetu-tadesse/ ",
         icon: faLinkedin,
         iconClass: "w-6 h-6 text-primary dark:text-primary",
       },
@@ -283,28 +305,6 @@ export const teamData: TeamMember[] = [
     ],
   },
 
-  {
-    name: "Surafel Sentayehu",
-    position: "Software engineer",
-    description:
-      "I am a 4K Labs alumni. I worked as a software engineer\
-    My name is Surafel Sentayehu Tadesse and I am a software engineer who enjoys programming and problem-solving. I hold a B.Sc. degree in Computer Science from Addis Ababa University. I have gained experience in web development, machine learning, and autonomous vehicle development through my internships and projects. I was a Software developer and ML engineer intern at 4k Labs. There, I was involved in an autonomous car project where I worked on lane detection algorithm using Python and OpenCV. I also assisted in a python programming training organized by Orange Digital Center Ethiopia and 4K Labs.",
-    image: surafelsentayehu,
-    type: "alumni",
-    socialLinks: [
-      {
-        url: "mailto:surafelsentayehu58@gmail.com",
-        icon: faEnvelope,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-
-      {
-        url: "https://www.linkedin.com/in/surafel-sentayehu-590764227/",
-        icon: faLinkedin,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-    ],
-  },
   {
     name: "Sisay Kassahun",
     position: "Software engineer ",
