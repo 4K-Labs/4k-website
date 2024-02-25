@@ -2,14 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { TeamMember } from "../../app/types/types";
 
 interface TeamMemberCardProps {
   memberData: TeamMember;
 }
-
-
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ memberData }) => {
   const { name, position, description, image, socialLinks } = memberData;
