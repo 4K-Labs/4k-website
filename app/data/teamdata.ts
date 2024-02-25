@@ -25,6 +25,7 @@ import tamiru from '../../public/images/teams/tamirualemnew.jpg'
 import lidya from '../../public/images/teams/lidiyaadmasu.jpg'
 import zelalem from '../../public/images/teams/zelalem.jpg'
 import lidetu from '../../public/images/teams/lidetu.jpg'
+
 export const teamData: TeamMember[] = [
   {
     name: "Lidetu Tadesse Kuma",
@@ -32,7 +33,7 @@ export const teamData: TeamMember[] = [
     description:
       "I am an electrical and computer engineer. With a passion for innovation. I have developed strong skills in Fab Lab and tech space management. However my true passion lies in embedded ML and digital fabrication where I constantly seek ways to incorporate this cutting-edge technology into my work. ",
     image: lidetu,
-    type: "alumni",
+    type: "member",
     socialLinks: [
       {
         url: "mailto:lidetu.tadesse@aau.edu.et",

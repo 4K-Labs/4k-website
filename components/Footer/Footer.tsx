@@ -22,7 +22,7 @@ export default function Home() {
       Link: "/about",
     },
     {
-      name: "Team members",
+      name: "Alumni",
       Link: "/teams",
     },
     {

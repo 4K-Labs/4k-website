@@ -97,7 +97,7 @@ const Teams = () => {
           <h1 className="font-medium leading-10 text-4xl font-custom">
             Alumni Members
           </h1>
-          <div className="flex-grow w-full justify-start flex-wrap flex flex-col md:flex md:flex-row items-center md:flex-wrap gap-6 md:gap-5 mt-5 pb-20">
+          <div className="flex-grow w-full justify-between flex-wrap flex flex-col  md:flex-row items-center md:flex-wrap gap-6 md:gap-5 mt-5 pb-20">
             {alumniMembers.map((member: TeamMember, index: number) => (
               <TeamMemberCard key={index} memberData={member} />
             ))}
