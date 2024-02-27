@@ -13,7 +13,7 @@ const FAQs = () => {
 
     return (
         
-        <div className="md:flex w-full mt-40 mb-6 justify-around items-stretch">
+        <div className="md:flex w-full md:w-3/4 p-2 mt-40 mb-6 mx-auto justify-around items-stretch">
             {/* Left Div - Content */}
             <div className=" flex flex-col justify-between md:w-1/2 p-12 md:order-1 bg-secondary-bg">
                 <div>

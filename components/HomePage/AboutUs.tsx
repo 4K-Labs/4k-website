@@ -35,9 +35,9 @@ const cardData = [
 ];
 const AboutUs = ()=> {
     return (
-    <div className="flex flex-col items-center w-full md:w-3/4">
+    <div className="flex flex-col items-center w-full">
 
-        <div className="text-left py-6 bg-gray-100">
+        <div className="text-left py-6 bg-gray-100 sm:px-20 md:px-32">
             <div className={`m-auto mt-10 border-gray-200 overflow-hidden`}>
                 <div className="flex flex-col  lg:flex-row-reverse">
                 <div className="flex w-full h-[400px] lg:h-[430px]  items-center justify-around lg:w-1/2">
@@ -159,7 +159,7 @@ const AboutUs = ()=> {
         </div>
 
         {/* the three cards */}
-        <div className="flex flex-wrap justify-center bg-transparent">
+        <div className="flex flex-wrap justify-center bg-transparent sm:px-20 md:px-32 w-full">
             {cardData.map((data, index) => (
                 <div key={index} className="py-2 w-full md:w-1/3">
                     <Card className="mt-6 text-center shadow-none bg-opacity-0 ">
