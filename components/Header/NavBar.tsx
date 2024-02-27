@@ -12,7 +12,7 @@ const NavBar = () => {
     { name: "ABOUT", link: "/about" },
     { name: "EVENTS", link: "/events" },
     
-    { name: "TEAMS", link: "/teams" },
+    { name: "AlUMNI", link: "/teams" },
     // { name: "INTERNSHIP", link: "/internship" },
     { name: "FAQ", link: "/faqs" },
   ];

@@ -1,10 +1,8 @@
-"use client"
+"use client";
 import Image from "next/image";
-import { Carousel ,IconButton  } from "@material-tailwind/react";
- 
+import { Carousel, IconButton } from "@material-tailwind/react";
 
 export default function WhoAreWe() {
-
   return (
     <div className="flex flex-col-reverse md:flex-row  p-3 gap-3">
       <div className="flex-1 bg-gray-200 p-6 md:p-12  rounded-e-3xl">
@@ -91,49 +89,21 @@ export default function WhoAreWe() {
           autoplayDelay={5000}
           className="rounded-xl"
         >
+
           <div className="relative w-full h-full">
-            <Image
-              alt={"4klabs"}
-              src={"/images/gathering.jpg"}
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image alt={"4klabs"} src={"/images/focused.jpg"} fill />
           </div>
 
           <div className="relative w-full h-full">
-            <Image
-              alt={"4klabs"}
-              src={"/images/focused.jpg"}
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image alt={"4klabs"} src={"/images/Presenting.jpg"} fill />
           </div>
 
           <div className="relative w-full h-full">
-            <Image
-              alt={"4klabs"}
-              src={"/images/Presenting.jpg"}
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image alt={"4klabs"} src={"/images/Members.jpg"} fill />
           </div>
 
           <div className="relative w-full h-full">
-            <Image
-              alt={"4klabs"}
-              src={"/images/Members.jpg"}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-
-          <div className="relative w-full h-full">
-            <Image
-              alt={"4klabs"}
-              src={"/images/Having-fun.JPG"}
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image alt={"4klabs"} src={"/images/havingFun.jpg"} fill />
           </div>
         </Carousel>
       </div>

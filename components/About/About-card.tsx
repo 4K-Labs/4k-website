@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Carousel, IconButton } from "@material-tailwind/react";
- 
+
 interface AboutCardProps {
   imageSrc1: string;
   imageSrc2: string;
@@ -23,7 +23,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
   <div
     className={`mt-8 bg-gray-200 rounded-md flex flex-wrap items-center justify-between ${row}`}
   >
-    <div className="flex w-full h-[400px] lg:h-[430px]  items-center justify-around lg:w-1/2">
+    <div className="flex w-full h-[400px] lg:h-[410px]  items-center justify-around lg:w-1/2  transform transition duration-500 hover:scale-105 hover:z-20">
       <Carousel
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -91,11 +91,11 @@ const AboutCard: React.FC<AboutCardProps> = ({
         autoplay={true}
         autoplayDelay={6000}
       >
-        <div className="relative w-full h-full m-0">
-          <Image alt={orangeTitle} src={imageSrc1} layout="fill" />
+        <div className="relative w-full h-full m-0 rounded-lg">
+          <Image alt={orangeTitle} src={imageSrc1} fill />
         </div>
-        <div className="relative w-full min-h-full m-0">
-          <Image  alt={orangeTitle} src={imageSrc2} layout="fill" />
+        <div className="relative w-full min-h-full m-0 rounded-lg">
+          <Image alt={orangeTitle} src={imageSrc2} fill />
         </div>
       </Carousel>
     </div>
