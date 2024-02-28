@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../button";
 // import 4krobot from '@/public/4krobot.gif'
 import Video from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -20,14 +21,16 @@ const Hero = () => {
           In 4K Labs KNOWLEDGE meets INNOVATION for CHANGE
 
         </p>
-        <Button> More About 4K Labs</Button>
+        <Link href="/about">
+          <Button> More About 4K Labs</Button>
+        </Link>
       </div>
       <div className = "mt-[-40]">
         {/* <video className="" width={500} height={500}  autoPlay loop playsInline>
           <source src="images/4krobot.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <Image className="object-cover" src="/4klabrobot.gif" alt={"Your browser does not support video"} width={500} height={480}/>
+        <Image className="object-cover" src="/4klabrobot.gif" alt={""} width={500} height={480}/>
         {/* <video src='/4krobot.gif' autoPlay loop playsInline/> */}
       </div>
     </div>
