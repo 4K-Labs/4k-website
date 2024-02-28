@@ -11,7 +11,7 @@ export default function Home() {
      }
 
     return (
-      <div className="bg-gray-100  flex  flex-col  items-center justify-around py-12">
+      <div  id="subscribe" className=" bg-gray-100  flex  flex-col  items-center justify-around py-12">
         <div className="flex flex-col gap-7 items-left">
           <div>
             <h1 className="text-xl text-blue-gray-600 font-semibold">

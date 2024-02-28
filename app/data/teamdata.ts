@@ -283,28 +283,7 @@ export const teamData: TeamMember[] = [
       },
     ],
   },
-  {
-    name: "Kidus Wegayehu",
-    position: "Embedded systems engineer",
-    description:
-      "I specialize in hardware solutions. With expertise in circuitry, firmware software, and thorough testing, I've led projects like Wire Buzz Game, hardware-based Tic Tac Toe game, and several Arduino-based innovations. I guide colleagues, leveraging my experience to craft hardware solutions that seamlessly integrate with software for innovative outcomes.",
-    image: kidusweg,
-    type: "member",
-    socialLinks: [
-      {
-        url: "mailto:kidusweg@gmail.com",
-        icon: faEnvelope,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-
-      {
-        url: "https://www.linkedin.com/in/kidus-wegayehu-5271a727b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6zxU3DsVTkGntZldOnLC0w%3D%3D",
-        icon: faLinkedin,
-        iconClass: "w-6 h-6 text-primary dark:text-primary",
-      },
-    ],
-  },
-
+  
   {
     name: "Sisay Kassahun",
     position: "Software engineer ",
@@ -362,6 +341,27 @@ export const teamData: TeamMember[] = [
 
       {
         url: "Https://linkedin.com/in/natminyel",
+        icon: faLinkedin,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+    ],
+  },
+  {
+    name: "Kidus Wegayehu",
+    position: "Embedded systems engineer",
+    description:
+      "I specialize in hardware solutions. With expertise in circuitry, firmware software, and thorough testing, I've led projects like Wire Buzz Game, hardware-based Tic Tac Toe game, and several Arduino-based innovations. I guide colleagues, leveraging my experience to craft hardware solutions that seamlessly integrate with software for innovative outcomes.",
+    image: kidusweg,
+    type: "member",
+    socialLinks: [
+      {
+        url: "mailto:kidusweg@gmail.com",
+        icon: faEnvelope,
+        iconClass: "w-6 h-6 text-primary dark:text-primary",
+      },
+
+      {
+        url: "https://www.linkedin.com/in/kidus-wegayehu-5271a727b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6zxU3DsVTkGntZldOnLC0w%3D%3D",
         icon: faLinkedin,
         iconClass: "w-6 h-6 text-primary dark:text-primary",
       },

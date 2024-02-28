@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className = "mt-[-40]">
-        {/* <video className="" width={500} height={500}  autoPlay loop playsInline>
+        <video className="hidden md:block" width={500} height={500}  autoPlay loop playsInline>
           <source src="images/4krobot.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
