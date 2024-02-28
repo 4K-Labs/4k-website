@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "../components/Header/NavBar";
 import Footer from "../components/Footer/Footer"
 
-
 //const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-primary-bg">
+      <body className={`bg-primary-bg`}>
         <Header />
         {children}
         <Footer />

@@ -52,27 +52,28 @@ export default function Home() {
   const SocialMedia = [
     {
       icon: <FacebookOutlinedIcon />,
-      address: "https://www.facebook.com/4klabs",
+      address: "https://www.facebook.com/4klabs4k/",
     },
     {
       icon: <LinkedInIcon />,
-      address: "https://www.linkedin.com/company/4klabs",
+      address: "https://www.linkedin.com/company/18701581/",
     },
     {
       icon: <InstagramIcon />,
-      address: "https://www.instagram.com/4klabs",
+      address:
+        "https://instagram.com/4klabs4k?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==",
     },
     {
       icon: <TwitterIcon />,
-      address: "https://www.twitter.com/4klabs",
+      address: "https://twitter.com/4klabs4k",
     },
     {
       icon: <TelegramIcon />,
-      address: "https://www.telegram.com/4klabs",
+      address: "https://t.me/AI_4klabs4k",
     },
     {
       icon: <WhatsAppIcon />,
-      address: "https://www.whatsapp.com/4klabs",
+      address: "https://whatsapp.com/channel/0029VaC9pxn0bIdquIfWZU38",
     },
   ];
   return (

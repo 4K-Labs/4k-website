@@ -16,8 +16,8 @@ import Link from "next/link";
 
 export default function EventCard() {
   return (
-    <div className = "bg-gray-100">
-      <div className="  w-3/4 m-auto  py-20">
+    <div className = "bg-gray-100  sm:px-20 md:px-32 w-full">
+      <div className="w-full m-auto  py-4">
         <Typography className=" text-center p-16 text-4xl">Events</Typography>
 
         <div
@@ -32,17 +32,18 @@ export default function EventCard() {
                   className="m-auto lg:max-w-[500px] sm:w-full  "
                 >
                   <Card>
-                    <CardHeader color="blue-gray" className="h-56 ">
+                    <CardHeader color="blue-gray" className="h-60 overflow-hidden">
                       <Image
                         src={event.imageUrl[0]}
                         alt="card-image"
                         fill={true}
+                        className="object-cover object-center"
                       />
                     </CardHeader>
                     <Typography
                       variant="h5"
                       color="blue-gray"
-                      className="m-2 text-center"
+                      className="m-2 text-top text-center"
                     >
                       {event.title}
                     </Typography>

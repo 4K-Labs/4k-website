@@ -3,7 +3,7 @@ export default function MissionText() {
   return (
     <div className="m-7">
       <h1 className="text-lg md:text-4xl md:mb-4  font-semibold ">
-        Mission And Visson
+        Mission And Vission
       </h1>
       <p className="mt-4  text-xl hidden md:block text-justify">
         At the forefront of research and development in AI, ML, embedded

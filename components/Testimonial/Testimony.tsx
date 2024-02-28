@@ -25,7 +25,7 @@ const Testimony = () => {
   };
 
   return (    
-    <div className="w-full sm:w-4/5 md:w-3/4 px-4 py-8 mx-auto bg-transparent">
+    <div className="w-full py-8  sm:px-20 md:px-32 mx-auto bg-transparent">
       <Marquee className="p-2" speed={70} pauseOnHover={true} play={isPlaying}>
         
         {testimonials.map((testimony) => (
