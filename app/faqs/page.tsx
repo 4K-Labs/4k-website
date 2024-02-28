@@ -13,9 +13,9 @@ const FAQs = () => {
 
     return (
         
-        <div className="md:flex w-full mt-40 mb-6 justify-around items-stretch">
+        <div className="md:flex w-full p-2 mt-40 mb-6 mx-auto justify-around items-stretch">
             {/* Left Div - Content */}
-            <div className=" flex flex-col justify-between md:w-1/2 p-12 md:order-1 bg-secondary-bg">
+            <div className=" flex flex-col justify-between md:w-1/2 md:pl-12 py-12 md:order-1 bg-secondary-bg">
                 <div>
                    <div className="text-4xl font-bold mb-4">Frequently Asked Questions</div>
                     <p className="text-lg text-[#AF7F54]">
@@ -50,10 +50,10 @@ const FAQs = () => {
             </div>
 
             {/* Right Div - FAQs */}
-            <div className="md:w-1/2 max-w-2xl mx-auto mt-8 p-12 md:order-2">
+            <div className="w-full md:w-1/2 max-w-2xl mx-auto mt-8 p-2.5 md:p-12 md:order-2">
                 <div>
                     {faqs.map((faq, idx) => (
-                        <div key={idx} className="border-b border-orange-400 m-8 min-w-lg">
+                        <div key={idx} className="border-b border-orange-400 my-8 min-w-lg">
                             <div className="flex justify-between items-center">
                                 <div className="text-lg text-[#AF7F54] font-semibold py-1">{faq.title}</div>
                                 <button
