@@ -8,7 +8,8 @@ import Footer from "../components/Footer/Footer"
 
 export const metadata: Metadata = {
   title: "4k labs",
-  description: "Welcome to 4K Labs A place where curiosity drives  innovation ",
+  description:
+    "4KLabs is an R&D laboratory at Addis Ababa University under the computer science Department specializing in the areas of AI, Robotics, IoT, and Software Development. In 4K Labs curiosity drives innovation (Robotics.Things.Dev)",
 };
 
 export default function RootLayout({

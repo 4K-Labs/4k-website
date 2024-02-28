@@ -27,6 +27,7 @@ const NavBar = () => {
           <Link href="/">
             <Image src={logo} width={90} height={90}  alt="logo" className="m-0 transform scale-125 p-0"/>
           </Link>
+
         </div>
 
         <div
@@ -51,13 +52,11 @@ const NavBar = () => {
               </a>
             </li>
           ))}
-          
         </ul>
-        <Button className=" font-bold">Subscribe</Button>
-
-        
+        <Link href="/contactus">
+          <Button className=" font-bold">Subscribe</Button>
+        </Link>
       </div>
-      
     </div>
   );
 };
