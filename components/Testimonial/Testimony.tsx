@@ -26,6 +26,14 @@ const Testimony = () => {
 
   return (    
     <div className="w-full py-8  sm:px-20 md:px-32 mx-auto bg-transparent">
+      <div className='text-center py-8'>
+        <h3 className="mb-2 inline-block text-4xl font-bold  text-primary  font-heading">
+          <span className="border-b-4 border-primary  text-gray-700 ">
+            TESTIM
+          </span>
+          ONIALS
+        </h3>
+      </div>
       <Marquee className="p-2" speed={70} pauseOnHover={true} play={isPlaying}>
         
         {testimonials.map((testimony) => (
