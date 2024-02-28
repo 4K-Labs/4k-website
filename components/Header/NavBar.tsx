@@ -5,6 +5,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../public/images/4klogo.png";
 import Image from "next/image";
 import Button from "../button";
+import Link from "next/link";
 
 const NavBar = () => {
   let Links = [
@@ -23,7 +24,9 @@ const NavBar = () => {
     <div className="bg-primary-bg  fixed top-0 left-0 w-full shadow-md z-50">
       <div className="w-3/4 mx-auto  flex  pr-9 md:pr-0 justify-between items-center font-sans ">
         <div className="cursor-pointer m-0 p-0 object-cover">
-          <Image src={logo} width={90} height={90}  alt="logo" className="m-0 transform scale-125 p-0"/>
+          <Link href="/">
+            <Image src={logo} width={90} height={90}  alt="logo" className="m-0 transform scale-125 p-0"/>
+          </Link>
         </div>
 
         <div

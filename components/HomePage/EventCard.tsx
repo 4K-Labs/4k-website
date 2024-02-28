@@ -18,7 +18,13 @@ export default function EventCard() {
   return (
     <div className = "bg-gray-100  sm:px-20 md:px-32 w-full">
       <div className="w-full m-auto  py-4">
-        <Typography className=" text-center p-16 text-4xl">Events</Typography>
+        <Typography className=" text-center p-12 font-heading">
+          <span className="mb-2 text-4xl font-bold  text-primary ">
+            <span className="border-b-4 border-primary  text-gray-700 ">
+              EVENTS
+            </span>
+          </span>
+        </Typography>
 
         <div
           className="flex flex-col
