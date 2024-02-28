@@ -43,7 +43,7 @@ export default function EventCard() {
                     <Typography
                       variant="h5"
                       color="blue-gray"
-                      className="m-2 text-top"
+                      className="m-2 text-top text-center"
                     >
                       {event.title}
                     </Typography>

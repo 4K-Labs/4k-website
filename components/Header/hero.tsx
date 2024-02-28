@@ -2,12 +2,14 @@ import React from "react";
 import robot from "../../public/images/robot.png";
 import Image from "next/image";
 import Button from "../button";
-
+// import 4krobot from '@/public/4krobot.gif'
 import Video from "next/image";
 
 const Hero = () => {
+
+  
   return (
-    <div className="w-full md:w-3/4 pl-16 py-60 m-auto flex justify-around  items-center self-center">
+    <div className="w-full h-screen md:w-3/4 pl-6 sm:pl-16 pt-44 pb-20 m-auto flex flex-col md:flex-row justify-around  items-center self-center">
       <div className="flex-col justify-start self-center">
         <div className="font-medium leading-10 text-3xl md:text-4xl pr-10">
         Welcome to 4K Labs <br /> A place where curiosity <br/> drives  innovation 
@@ -20,11 +22,13 @@ const Hero = () => {
         </p>
         <Button> More About 4K Labs</Button>
       </div>
-      <div className = "mt-[-40] bg-red-500">
-        <video className="hidden md:block" width={500} height={500}  autoPlay loop playsInline>
+      <div className = "mt-[-40]">
+        {/* <video className="" width={500} height={500}  autoPlay loop playsInline>
           <source src="images/4krobot.MP4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <Image className="object-cover" src="/4klabrobot.gif" alt={"Your browser does not support video"} width={500} height={480}/>
+        {/* <video src='/4krobot.gif' autoPlay loop playsInline/> */}
       </div>
     </div>
   );
