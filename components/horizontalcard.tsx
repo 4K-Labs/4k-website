@@ -1,9 +1,12 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { CardData } from '../app/types/types';
 import Image, { StaticImageData } from 'next/image';
 
 import { Carousel } from "@material-tailwind/react";
+
+import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import CircularCarousel from './circularcarousal';
 interface HorizontalCardProps {
   eventData: CardData;
   index: number;
@@ -13,24 +16,41 @@ interface HorizontalCardProps {
 const HorizontalCard: React.FC<HorizontalCardProps> = ({ eventData, index }) => {
   const {  title, content, imageUrl } = eventData;
 
+  
+
   return (
     <>
     <div className={`w-3/4  m-auto border mt-10 border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl`}>
       <div className={`flex flex-col lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
       <div className="lg:w-1/2 h-96 ">
             {imageUrl.length > 0 ? (
-              <Carousel loop autoplay autoplayDelay={4000} transition={{ duration: 2 }} className="rounded-xl">
-                {imageUrl.map((url: StaticImageData, index: number) => (
-                  <Image
-                    key={index}
-                    width = {700}
-                    height={400}
-                    src={url.src}
-                    alt={`image-${index}`}
-                    className="w-full h-full object-cover"
-                  />
-                ))}
-              </Carousel>
+              // <Carousel  navigation ={ ({ setActiveIndex, activeIndex, length }) => (
+              //   <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+              //     {new Array(length).fill("").map((_, i) => (
+              //       <span
+              //         key={i}
+              //         className={`block h-3 w-3 cursor-pointer rounded-full transition-colors content-[''] ${
+              //           activeIndex === i ? "bg-white" : "bg-white/50"
+              //         }`}
+              //         onClick={() => setActiveIndex(i)}
+              //       />
+              //     ))}
+              //   </div>
+              // )}
+              //    loop autoplay autoplayDelay={4000} transition={{ type: 'tween' ,duration: 2 }} className="rounded-xl"
+              //    >
+              //   {imageUrl.map((url: StaticImageData, index: number) => (
+              //     <Image
+              //       key={index}
+              //       width = {700}
+              //       height={400}
+              //       src={url.src}
+              //       alt={`image-${index}`}
+              //       className="w-full h-full object-fill"
+              //     />
+              //   ))}
+              // </Carousel>
+              <CircularCarousel imageUrl={imageUrl} /> 
             ) : (
               <p>No images available</p>
             )}

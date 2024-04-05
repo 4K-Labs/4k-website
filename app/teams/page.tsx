@@ -14,32 +14,46 @@ const Teams = () => {
     member.position.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const teamMemberst = filteredMembers.filter(
+    (member) => member.type === "member"
+  );
+  
+  const alumniMemberst = filteredMembers.filter((member) => member.type === "alumni");
  
-  const itemsPerPage: number = 8;
+  const itemsPerPage: number = 4;
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const indexOfLastMember: number = currentPage * itemsPerPage;
   const indexOfFirstMember: number = indexOfLastMember - itemsPerPage;
-  const currentMembers: TeamMember[] = filteredMembers.slice(
+  const teamMembers: TeamMember[] = teamMemberst.slice(
     indexOfFirstMember,
     indexOfLastMember
   );
-  const totalPages: number = Math.ceil(filteredMembers.length / itemsPerPage);
+  const totalPages: number = Math.ceil(teamMemberst.length / itemsPerPage);
+
+ 
+  
+  //alumni
+  const itemsPerPage2: number = 4;
+  
+
+  const indexOfLastMember2: number = currentPage * itemsPerPage;
+  const indexOfFirstMember2: number = indexOfLastMember - itemsPerPage;
+  const alumniMembers: TeamMember[] = alumniMemberst.slice(
+    indexOfFirstMember,
+    indexOfLastMember
+  );
+  const totalPages2: number = Math.ceil(alumniMembers.length / itemsPerPage);
 
   const handlePageChange = (pageNumber: number): void => {
     setCurrentPage(pageNumber);
   };
-  
 
-  const teamMembers = currentMembers.filter(
-    (member) => member.type === "member"
-  );
-  
-  const alumniMembers = currentMembers.filter((member) => member.type === "alumni");
+ 
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
-    setCurrentPage(1); // Reset pagination when search query changes
+    setCurrentPage(1);
   };
 
   
@@ -93,17 +107,8 @@ const Teams = () => {
           </form>
         </div>
 
-        <div className="pt-10">
-          <h1 className="font-medium leading-10 text-4xl font-custom">
-            Alumni Members
-          </h1>
-          <div className="flex-grow w-full justify-between flex-wrap flex flex-col  md:flex-row items-center md:flex-wrap gap-6 md:gap-5 mt-5 pb-20">
-            {alumniMembers.map((member: TeamMember, index: number) => (
-              <TeamMemberCard key={index} memberData={member} />
-            ))}
-          </div>
-        </div>
-        <div>
+        
+        <div className = "pt-10">
           <h1 className="font-medium leading-10 text-4xl font-custom">
             Team Members
           </h1>
@@ -112,6 +117,16 @@ const Teams = () => {
               <TeamMemberCard key={index} memberData={member} />
             ))}
           </div>
+          <div className="">
+          <h1 className="font-medium leading-10 text-4xl font-custom">
+            Alumni Members
+          </h1>
+          <div className="flex-grow w-full justify-start flex-wrap flex flex-col  md:flex-row items-center md:flex-wrap gap-6 md:gap-5 mt-5 pb-20">
+            {alumniMembers.map((member: TeamMember, index: number) => (
+              <TeamMemberCard key={index} memberData={member} />
+            ))}
+          </div>
+        </div>
 
           <div className="flex justify-center items-center">
             <DefaultPagination

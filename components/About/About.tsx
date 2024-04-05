@@ -23,7 +23,8 @@ export default function about() {
             imageSrc2="/images/vision2.jpg"
           blackTitle="Our "
           orangeTitle="Vision"
-          description="The vision of 4K Labs is to be one of the leaders in the development of innovative solutions that leverage state of the art technologies to solve complex problems and create new opportunities. As one pillar of the university is community service, 4K Labs has a vision to be at the forefront of R&D to provide solutions to the community challenges."/>
+          description="The vision of 4K Labs is to be one of the leaders in the development of innovative solutions that leverage state of the art technologies to solve complex problems and create new opportunities. As one pillar of the university is community service, 4K Labs has a vision to be at the forefront of R&D to provide solutions to the community challenges."
+        />
         </div>
         <Division />
         <MissionAndVision />
