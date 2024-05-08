@@ -1,9 +1,12 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { CardData } from '../app/types/types';
 import Image, { StaticImageData } from 'next/image';
 
 import { Carousel } from "@material-tailwind/react";
+
+import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import CircularCarousel from './circularcarousal';
 interface HorizontalCardProps {
   eventData: CardData;
   index: number;
@@ -12,6 +15,8 @@ interface HorizontalCardProps {
 
 const HorizontalCard: React.FC<HorizontalCardProps> = ({ eventData, index }) => {
   const {  title, content, imageUrl } = eventData;
+
+  
 
   return (
     <>
