@@ -29,8 +29,8 @@ const Hero = () => {
         <video className="hidden md:block" width={500} height={500}  autoPlay loop playsInline>
           <source src="images/4krobot.MP4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
-        <Image className="object-cover" src="/4klabrobot.gif" alt={""} width={500} height={480}/>
+        </video> 
+{/*         <Image className="object-cover" src="/4klabrobot.gif" alt={""} width={500} height={480}/> */}
         {/* <video src='/4krobot.gif' autoPlay loop playsInline/> */}
       </div>
     </div>
