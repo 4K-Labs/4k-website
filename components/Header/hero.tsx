@@ -10,7 +10,7 @@ const Hero = () => {
 
   
   return (
-    <div className="w-full h-screen md:w-3/4 pl-6 sm:pl-16 pt-44 pb-20 m-auto flex flex-col md:flex-row justify-around  items-center self-center">
+    <div className="w-full bg-[#FBFCF8] h-screen pl-6 sm:pl-16 pt-44 pb-20 m-auto flex flex-col md:flex-row justify-around  items-center self-center">
       <div className="flex-col justify-start self-center">
         <div className="font-medium leading-10 text-3xl md:text-4xl pr-10">
         Welcome to 4K Labs <br /> A place where curiosity <br/> drives  innovation 

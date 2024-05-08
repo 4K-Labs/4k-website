@@ -28,9 +28,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ memberData }) => {
           {position}
         </h6>
         <div className = "h-40 text-start p-5 pt-3 scrollbar">
-        <span className="text-sm text-justify text-gray-500 dark:text-gray-400">
+          <div className="text-justify">
+        <span className=" text-xs text-gray-500 dark:text-gray-400">
           {description}
         </span>
+        </div>
         </div>
         <div className="pl-5 mt-5 flex row gap-4">
           {socialLinks.map((socialLink, index) => (
