@@ -11,7 +11,7 @@ const Hero = () => {
   
   return (
     <div className="w-full bg-[#FBFCF8] h-screen pl-6 sm:pl-16 pt-44 pb-20 m-auto flex flex-col md:flex-row justify-around  items-center self-center">
-      <div className="flex-col justify-start self-center">
+      <div className="flex-col justify-start self-center pl-5 md:pl-20">
         <div className="font-medium leading-10 text-3xl md:text-4xl pr-10">
         Welcome to 4K Labs <br /> A place where curiosity <br/> drives  innovation 
 
@@ -25,7 +25,7 @@ const Hero = () => {
           <Button> More About 4K Labs</Button>
         </Link>
       </div>
-      <div className = "mt-[-40]">
+      <div className = "md:mt-[-40] hidden md:block">
         {/* <video className="" width={500} height={500}  autoPlay loop playsInline>
           <source src="images/4krobot.MP4" type="video/mp4" />
           Your browser does not support the video tag.

@@ -27,7 +27,7 @@ const HorizontalCard: React.FC<HorizontalCardProps> = ({ eventData, index }) => 
                     height={400}
                     src={url.src}
                     alt={`image-${index}`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full"
                   />
                 ))}
               </Carousel>
