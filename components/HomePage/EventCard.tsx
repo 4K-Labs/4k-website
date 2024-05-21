@@ -43,7 +43,7 @@ export default function EventCard() {
                         src={event.imageUrl[0]}
                         alt="card-image"
                         fill={true}
-                        className="object-cover object-center"
+                        className="object-center"
                       />
                     </CardHeader>
                     <Typography
